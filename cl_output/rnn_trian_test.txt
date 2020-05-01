@@ -1,0 +1,48 @@
+
+ruinanzhangProjectsCodeSearchNetRunsrnn-2020-05-01-01-45-30Logs
+
+Overview
+
+
+
+
+
+Benchmark: codesearchnet
+
+  Epoch 14 (train) took 622.36s [processed 661 samples/second]
+ Training Loss: 1.609183
+  Epoch 14 (valid) took 14.10s [processed 1631 samples/second]
+ Validation:  Loss: 3.002874 | MRR: 0.504894
+==== Epoch 15 ====
+  Epoch 15 (train) took 609.25s [processed 676 samples/second]
+ Training Loss: 1.605330
+  Epoch 15 (valid) took 15.66s [processed 1468 samples/second]
+ Validation:  Loss: 2.980615 | MRR: 0.506157
+==== Epoch 16 ====
+  Epoch 16 (train) took 496.80s [processed 829 samples/second]
+ Training Loss: 1.602247
+  Epoch 16 (valid) took 11.60s [processed 1982 samples/second]
+ Validation:  Loss: 2.990608 | MRR: 0.504848
+==== Epoch 17 ====
+  Epoch 17 (train) took 471.79s [processed 873 samples/second]
+ Training Loss: 1.594999
+  Epoch 17 (valid) took 11.88s [processed 1935 samples/second]
+ Validation:  Loss: 3.008489 | MRR: 0.502341
+==== Epoch 18 ====
+  Epoch 18 (train) took 471.69s [processed 873 samples/second]
+ Training Loss: 1.599929
+  Epoch 18 (valid) took 11.73s [processed 1960 samples/second]
+ Validation:  Loss: 2.991348 | MRR: 0.505382
+2020-05-01 05:00:36.135980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2020-05-01 05:00:36.136065: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-01 05:00:36.136084: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2020-05-01 05:00:36.136094: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2020-05-01 05:00:36.136276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7264 MB memory) -> physical GPU (device: 0, name: Quadro P4000, pci bus id: 0000:00:05.0, compute capability: 6.1)
+Test-All MRR (bs=1,000):  0.638
+FuncNameTest-All MRR (bs=1,000):  0.644
+Validation-All MRR (bs=1,000):  0.588
+Test-python MRR (bs=1,000):  0.638
+FuncNameTest-python MRR (bs=1,000):  0.644
+Validation-python MRR (bs=1,000):  0.588
+
+
