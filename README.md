@@ -14,8 +14,9 @@ We hope that CodeSearchNet is a step towards engaging with the broader machine l
 
 More context regarding the motivation for this problem is in this  [technical report](https://arxiv.org/abs/1909.09436).
 
-## 
+## Some Notes on Bag of Words Model
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMD
-IzMzgxODg1XX0=
+eyJoaXN0b3J5IjpbLTEzNzA3NzA5NjcsMTcwMDkxMDA4OCwtNj
+Y2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
 -->
