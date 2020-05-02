@@ -22,11 +22,12 @@ More context regarding the motivation for this problem is in this  [technical re
 
 ## I need to discuss what exactly is being tested.
 * Really unsure right now.
-* 
+* [https://arxiv.org/pdf/1909.09436.pdf](https://arxiv.org/pdf/1909.09436.pdf) This is a paper regarding the proj
 
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjc2NjQ1NiwtMTM3MDc3MDk2NywxNz
-AwOTEwMDg4LC02NjYxNzY1NDUsLTIwMjMzODE4ODVdfQ==
+eyJoaXN0b3J5IjpbMTMyOTAwNjYxNywtNzE2NzY2NDU2LC0xMz
+cwNzcwOTY3LDE3MDA5MTAwODgsLTY2NjE3NjU0NSwtMjAyMzM4
+MTg4NV19
 -->
