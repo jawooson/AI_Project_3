@@ -23,11 +23,12 @@ More context regarding the motivation for this problem is in this  [technical re
 ## I need to discuss what exactly is being tested.
 * Really unsure right now.
 * [https://arxiv.org/pdf/1909.09436.pdf](https://arxiv.org/pdf/1909.09436.pdf) This is a paper regarding the project in general, might offer some good insight. 
+* Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snipets and we must rank them in terms of importance. 
 
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMT
-M3MDc3MDk2NywxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIwMjMz
-ODE4ODVdfQ==
+eyJoaXN0b3J5IjpbLTMzMzI1NDg5MiwtMTU0MjczODI5NCwtNz
+E2NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5MTAwODgsLTY2NjE3
+NjU0NSwtMjAyMzM4MTg4NV19
 -->
