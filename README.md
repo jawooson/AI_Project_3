@@ -16,15 +16,17 @@ More context regarding the motivation for this problem is in this  [technical re
 
 ## Some Notes on Bag of Words Model
 * [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/) This is a good article duscussing generally what BoW is. 
-* It really isnt a NN structure per s
+* It really isnt a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net.
 
 
 
 ## I need to discuss what exactly is being tested.
+* Really unsure right now.
+* 
 
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjk1MTkwNTEsLTEzNzA3NzA5NjcsMT
-cwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
+eyJoaXN0b3J5IjpbLTcxNjc2NjQ1NiwtMTM3MDc3MDk2NywxNz
+AwOTEwMDg4LC02NjYxNzY1NDUsLTIwMjMzODE4ODVdfQ==
 -->
