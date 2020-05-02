@@ -15,8 +15,16 @@ We hope that CodeSearchNet is a step towards engaging with the broader machine l
 More context regarding the motivation for this problem is in this  [technical report](https://arxiv.org/abs/1909.09436).
 
 ## Some Notes on Bag of Words Model
-* 
+* [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/) This is a good article duscussing generally what BoW is. 
+* It really isnt a NN structure per s
+
+
+
+## I need to discuss what exactly is being tested.
+
+## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
+[https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzA3NzA5NjcsMTcwMDkxMDA4OCwtNj
-Y2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
+eyJoaXN0b3J5IjpbLTExMjk1MTkwNTEsLTEzNzA3NzA5NjcsMT
+cwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
 -->
