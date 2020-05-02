@@ -25,7 +25,7 @@ More context regarding the motivation for this problem is in this  [technical re
 	c. Discuss why leaderboard uses NDCG .
 
 
-## Some Notes on Bag of Words Model
+## 1. Some Notes on Bag of Words Model
 * [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/) This is a good article duscussing generally what BoW is. 
 * It really isnt a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net.
 
@@ -39,7 +39,7 @@ More context regarding the motivation for this problem is in this  [technical re
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2OTcxOTMxNCwtMzMzMjU0ODkyLC0xNT
-QyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5NjcsMTcwMDkx
-MDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
+eyJoaXN0b3J5IjpbLTE2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMT
+U0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5
+MTAwODgsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
 -->
