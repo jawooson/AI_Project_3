@@ -20,9 +20,9 @@ More context regarding the motivation for this problem is in this  [technical re
 3. Discuss BoW implementation in CodeSearchNet
 
 4. Go into how the testing is done, metrics used, methodology. 
-	a. How is testing is done
+	a. How is testing is done?
 	b. What is MRR, why does MRR need to be used here
-	c. Discuss why leaderboard uses NDCG  
+	c. Discuss why leaderboard uses NDCG .
 
 
 ## Some Notes on Bag of Words Model
@@ -39,7 +39,7 @@ More context regarding the motivation for this problem is in this  [technical re
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjQ5NzE1MywtMzMzMjU0ODkyLC0xNT
+eyJoaXN0b3J5IjpbMTI2OTcxOTMxNCwtMzMzMjU0ODkyLC0xNT
 QyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5NjcsMTcwMDkx
 MDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
 -->
