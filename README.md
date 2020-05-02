@@ -14,6 +14,14 @@ We hope that CodeSearchNet is a step towards engaging with the broader machine l
 
 More context regarding the motivation for this problem is in this  [technical report](https://arxiv.org/abs/1909.09436).
 
+## Intended Structure of documentation
+1. Discuss BoW generally
+2. Discuss BoW NN
+3. Discuss BoW implementation in CodeSearchNet
+
+4. Go into how the testing is 
+
+
 ## Some Notes on Bag of Words Model
 * [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/) This is a good article duscussing generally what BoW is. 
 * It really isnt a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net.
@@ -28,7 +36,7 @@ More context regarding the motivation for this problem is in this  [technical re
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM1NzMxMzU1LC0zMzMyNTQ4OTIsLTE1ND
+eyJoaXN0b3J5IjpbMzgzMTcyMzk1LC0zMzMyNTQ4OTIsLTE1ND
 I3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3MDc3MDk2NywxNzAwOTEw
 MDg4LC02NjYxNzY1NDUsLTIwMjMzODE4ODVdfQ==
 -->
