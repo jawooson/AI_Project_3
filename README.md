@@ -58,33 +58,35 @@ This is generally what Bag of Words is, it translates text data to a from that i
 [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
 [bow 2](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 
-## 4a I need to discuss what exactly is being tested.
-* Really unsure right now.
-* [https://arxiv.org/pdf/1909.09436.pdf](https://arxiv.org/pdf/1909.09436.pdf) This is a paper regarding the project in general, might offer some good insight. 
-* Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  
 
-## Neural Bag of Words
+## 2 Neural Bag of Words
 The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. 
 
 Essentially the NBOW model is a fully connected feed forward network with BOW input
 
 [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
 
-## 
 
-## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
+## 3 Discuss BoW implementation in CodeSearchNet## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 
-### In test.py, MRR is used for test accuracy:
+
+
+## 4a I need to discuss what exactly is being tested.
+* Really unsure right now.
+* [https://arxiv.org/pdf/1909.09436.pdf](https://arxiv.org/pdf/1909.09436.pdf) This is a paper regarding the project in general, might offer some good insight. 
+* Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  
+
+## 4b In test.py, MRR is used for test accuracy:
 * Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
-### In the W&B competition website, nDCG is used to rank different learning methods:
+## 4c In the W&B competition website, nDCG is used to rank different learning methods:
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
-## Add picture found in AI/Assignment_3/readme_images
+#### Add picture found in AI/Assignment_3/readme_images
 
 [https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
 
@@ -108,11 +110,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQwMDA2NjAsMTU1MjEzNjY5LDE3OT
-A3MTAyNzIsOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3
-LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNz
-AxNDc3OSwxMzMyODAzNzc3LDkyODUwODAzNywtMTE4NTExOTcx
-NiwxMDg2MDMwNjIyLC05Njg2MjM0NTksMTk4MzM3Mzg5OSwtMT
-Y5NTQ5MDEwNywtMzMzMjU0ODkyLC0xNTQyNzM4Mjk0LC03MTY3
-NjY0NTZdfQ==
+eyJoaXN0b3J5IjpbMTU2MzU4NDQ4MywxNTUyMTM2NjksMTc5MD
+cxMDI3Miw5NjA1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcs
+ODIxMzIyNjk0LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MD
+E0Nzc5LDEzMzI4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2
+LDEwODYwMzA2MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNj
+k1NDkwMTA3LC0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2
+NjQ1Nl19
 -->
