@@ -79,7 +79,7 @@ In an embedding, words are represented by dense vectors where a vector represent
 
 The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used.
 
-The position of a word in the learned vector space is referred to as its embedding.
+The position of a word in the learned vector space is referred to as its embedding. 
 
 [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
@@ -124,11 +124,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNz
-YyNDgyMzUsMTM5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcy
-LDk2MDU3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMj
-I2OTQsMTk2MjMzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3Nzks
-MTMzMjgwMzc3Nyw5Mjg1MDgwMzcsLTExODUxMTk3MTYsMTA4Nj
-AzMDYyMiwtOTY4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAx
-MDddfQ==
+eyJoaXN0b3J5IjpbMTQ0MTU2NjUwOSwyMDcyNzczNTMsLTU4Nj
+UzMDY3MiwtMTE3NjI0ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5
+LDE3OTA3MTAyNzIsOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NT
+gyMDQ3LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEs
+MjAxNzAxNDc3OSwxMzMyODAzNzc3LDkyODUwODAzNywtMTE4NT
+ExOTcxNiwxMDg2MDMwNjIyLC05Njg2MjM0NTksMTk4MzM3Mzg5
+OV19
 -->
