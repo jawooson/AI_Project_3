@@ -85,7 +85,7 @@ CodeSearchNet uses Tensorflow's built in word embedding package.
 
 [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
-
+[tensor flow word embedding](https://www.tensorflow.org/tutorials/text/word_embeddings)
 
 ## 4a I need to discuss what exactly is being tested.
 * Really unsure right now.
@@ -126,7 +126,7 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1Njc0NzI3MiwtMTE3NjI0ODIzNSwxMz
+eyJoaXN0b3J5IjpbLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMz
 kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
 LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
 MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
