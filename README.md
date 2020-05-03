@@ -53,8 +53,8 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
-In the 
-
+## Actual CodeSearchNet Implementation
+* 
 
 ## I need to discuss what exactly is being tested.
 * Really unsure right now.
@@ -64,9 +64,9 @@ In the
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMjgwMzc3Nyw5Mjg1MDgwMzcsLTExOD
-UxMTk3MTYsMTA4NjAzMDYyMiwtOTY4NjIzNDU5LDE5ODMzNzM4
-OTksLTE2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMTU0MjczODI5NC
-wtNzE2NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5MTAwODgsLTY2
-NjE3NjU0NSwtMjAyMzM4MTg4NV19
+eyJoaXN0b3J5IjpbMjAxNzAxNDc3OSwxMzMyODAzNzc3LDkyOD
+UwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIyLC05Njg2MjM0
+NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0ODkyLC
+0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5NjcsMTcw
+MDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
 -->
