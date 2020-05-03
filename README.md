@@ -95,15 +95,15 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 Research Papers Referenced and Used:
 1. [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
-	* This is the academic paper that is asscoiatde by the creators of the Co
+	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
 2. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzgxMDIyMDUsMTc5MDcxMDI3Miw5Nj
-A1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0
-LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMz
-I4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2
-MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC
-0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3
-MDc3MDk2N119
+eyJoaXN0b3J5IjpbMTA4MzY4NDAzMSwxNzkwNzEwMjcyLDk2MD
+U3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQs
+MTk2MjMzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMj
+gwMzc3Nyw5Mjg1MDgwMzcsLTExODUxMTk3MTYsMTA4NjAzMDYy
+MiwtOTY4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAxMDcsLT
+MzMzI1NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcw
+NzcwOTY3XX0=
 -->
