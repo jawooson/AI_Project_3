@@ -94,32 +94,18 @@ This metric used for accuracy is much better than traditional accuracy score bec
 ## Bibliography
 
 Research Papers Referenced and Used:
-1. [Continuous Learning in Single-Incremental-Task Scenarios](https://arxiv.org/abs/1806.08568)
-	* This paper describes Continual Learning, Single-Incremental-Task, New Classes problem, and catastrophic forgetting. They have a great description of the Naive, Rehearsal, and Elastic Weight Consolidation approach to solving Continual Learning. 
+1. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf)
+	 *  
+
 2. [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
 	* This is the first paper to propose the Elastic Weight Consolidation approach to solving Continual Learning. 
-3. [Compete to Compute](https://papers.nips.cc/paper/5059-compete-to-compute)
-	* This paper describes how the order of your training data matters. 
-4. [CORe50: a New Dataset and Benchmark for Continuous Object Recognition](http://proceedings.mlr.press/v78/lomonaco17a/lomonaco17a.pdf)
-	* This paper describes the CORe50 dataset. In addition, the authors used the dataset to test several Continual Learning methods and compare their benchmarks. 
-5. [Memory Efficient Experience Replay for Streaming Learning](https://arxiv.org/abs/1809.05922)
 
-
-Datasets Used:  
-* [CORe50 Dataset](https://vlomonaco.github.io/core50/)
-	* The dataset we use. 
-
-Code Used As a Starting Point: 
-* [CVPR clvision challenge](https://github.com/vlomonaco/cvpr_clvision_challenge)
-	* The starting point for the code we developed. This includes the loader for the CORe50 Dataset. Also, included is the Naive approach to continual learning that we use a baseline benchmark. 
-* [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
-	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQ1OTE0MDQsMTc5MDcxMDI3Miw5Nj
-A1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0
-LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMz
-I4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2
-MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC
-0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3
-MDc3MDk2N119
+eyJoaXN0b3J5IjpbNTIwMTU0MTI2LDE3OTA3MTAyNzIsOTYwNT
+c4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwx
+OTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyOD
+AzNzc3LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIy
+LC05Njg2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMz
+MzMjU0ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3
+NzA5NjddfQ==
 -->
