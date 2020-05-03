@@ -30,7 +30,7 @@ More context regarding the motivation for this problem is in this  [technical re
 * It really isn't a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net. 
 * The purpose of Bag of Words is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
 * This is interesting, because BoW has little to do with the neural net being used to model the data, it is simply a preprocessing step. The difficult part is knowing which deep learning model to use with this text data. Also, there are many ways to vectorize text data. 
-* For BoW, we need to create a vocabulary, which is just the total 
+* For BoW, we need to create a vocabulary, which is just all the unique words found in an entire corpus (collection of documents). For each each document, we vector
 
 
 
@@ -42,9 +42,9 @@ More context regarding the motivation for this problem is in this  [technical re
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODQ0Mjg0MTUsMTA4NjAzMDYyMiwtOT
-Y4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1
-NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOT
-Y3LDE3MDA5MTAwODgsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
+eyJoaXN0b3J5IjpbMTE0OTkyOTc5NCwxMDg2MDMwNjIyLC05Nj
+g2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0
+ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5Nj
+csMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
 
 -->
