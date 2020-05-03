@@ -98,8 +98,14 @@ Research Papers Referenced and Used:
 	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
 2. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
 3. 
+
+Main challenge github:
+1. [CodeSearchNet](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
+
+Challenge W&B Page:
+[CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MzY4NDAzMSwxNzkwNzEwMjcyLDk2MD
+eyJoaXN0b3J5IjpbMTMxNjg5MTQzMSwxNzkwNzEwMjcyLDk2MD
 U3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQs
 MTk2MjMzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMj
 gwMzc3Nyw5Mjg1MDgwMzcsLTExODUxMTk3MTYsMTA4NjAzMDYy
