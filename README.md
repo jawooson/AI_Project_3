@@ -69,12 +69,12 @@ This is generally what Bag of Words is, it translates text data to a from that i
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
 
 ### In the W&B competition website, nDCG is used to rank different learning methods:
-* Normalized Discounted 
+* Normalized Discounted Cumulative Gain 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMz
-I4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2
-MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC
-0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3
-MDc3MDk2NywxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIwMjMzOD
-E4ODVdfQ==
+eyJoaXN0b3J5IjpbMTk2MjMzMDUyNywtNzg4ODMzNzQxLDIwMT
+cwMTQ3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzcsLTExODUxMTk3
+MTYsMTA4NjAzMDYyMiwtOTY4NjIzNDU5LDE5ODMzNzM4OTksLT
+E2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMTU0MjczODI5NCwtNzE2
+NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5MTAwODgsLTY2NjE3Nj
+U0NSwtMjAyMzM4MTg4NV19
 -->
