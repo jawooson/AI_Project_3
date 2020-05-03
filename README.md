@@ -2,7 +2,6 @@
 
 This is an extension of the [CodeSearchNet](https://app.wandb.ai/github/codesearchnet/benchmark) competition. 
 
-Project assignment: 
 
 ## A brief overview of the project
 [CodeSearchNet](https://arxiv.org/abs/1909.09436)  is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this  [blog post](https://githubengineering.com/towards-natural-language-semantic-code-search/)  and is a joint collaboration between GitHub and the  [Deep Program Understanding](https://www.microsoft.com/en-us/research/project/program/)  group at  [Microsoft Research - Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). We aim to provide a platform for community research on semantic code search via the following:
@@ -26,6 +25,7 @@ More context regarding the motivation for this problem is in this  [technical re
 	b. What is MRR, why does MRR need to be used here [check]
 	c. Discuss why leaderboard uses NDCG . [check]
 
+5. pretrained model results
 
 ## 1. Some Notes on Bag of Words Model
 * [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/) This is a good article discussing generally what BoW is. 
@@ -83,7 +83,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
 ### In the W&B competition website, nDCG is used to rank different learning methods:
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
-
+## Add picture found in AI/Assignment_3/readme_images
 
 [https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
 
@@ -115,11 +115,11 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDcxMDI3Miw5NjA1NzgxNDYsMTI2NT
-Y4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMzA1Mjcs
-LTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3NzcsOTI4NT
-A4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2MjIsLTk2ODYyMzQ1
-OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC0zMzMyNTQ4OTIsLT
-E1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3MDc3MDk2NywxNzAw
-OTEwMDg4XX0=
+eyJoaXN0b3J5IjpbLTE0MTQ1OTE0MDQsMTc5MDcxMDI3Miw5Nj
+A1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0
+LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMz
+I4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2
+MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC
+0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3
+MDc3MDk2N119
 -->
