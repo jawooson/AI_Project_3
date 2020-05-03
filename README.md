@@ -63,7 +63,10 @@ This is generally what Bag of Words is, it translates text data to a from that i
 
 ## Neural Bag of Words
 The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. 
-[https://www.aclweb.org/anthology/W16-1626.pdf](https://www.aclweb.org/anthology/W16-1626.pdf)
+
+Essentially the NBOW model is a fully connected feed forward network with BOW input
+
+[Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
 
 
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
@@ -110,7 +113,7 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1OTMyMzM4LDEyNjU2ODY4NjMsOTE5NT
+eyJoaXN0b3J5IjpbOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NT
 gyMDQ3LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEs
 MjAxNzAxNDc3OSwxMzMyODAzNzc3LDkyODUwODAzNywtMTE4NT
 ExOTcxNiwxMDg2MDMwNjIyLC05Njg2MjM0NTksMTk4MzM3Mzg5
