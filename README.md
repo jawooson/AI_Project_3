@@ -62,11 +62,15 @@ This is generally what Bag of Words is, it translates text data to a from that i
 
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+
+### In test.py, MRR is used for test accuracy:
+
+### In the W&B competition website, is used for test accuracy":
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDIwMDQwMDksMjAxNzAxNDc3OSwxMz
-MyODAzNzc3LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMw
-NjIyLC05Njg2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNy
-wtMzMzMjU0ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEz
-NzA3NzA5NjcsMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMz
-gxODg1XX0=
+eyJoaXN0b3J5IjpbLTY5OTU5ODcxNSwyMDE3MDE0Nzc5LDEzMz
+I4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2
+MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC
+0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3
+MDc3MDk2NywxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIwMjMzOD
+E4ODVdfQ==
 -->
