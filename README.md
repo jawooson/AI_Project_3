@@ -55,6 +55,8 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
+While this idea sounds very simple, there are many different methodologies in how to vectorize text data, such as dropping out low frequency words, 
+
 [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
 [bow 2](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 
@@ -62,7 +64,6 @@ This is generally what Bag of Words is, it translates text data to a from that i
 ## 2 Neural Bag of Words
 The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. 
 
-Essentially the NBOW model is a fully connected feed forward network with BOW input
 
 [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
 
@@ -110,11 +111,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzU4NDQ4MywxNTUyMTM2NjksMTc5MD
-cxMDI3Miw5NjA1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcs
-ODIxMzIyNjk0LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MD
-E0Nzc5LDEzMzI4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2
-LDEwODYwMzA2MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNj
-k1NDkwMTA3LC0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2
-NjQ1Nl19
+eyJoaXN0b3J5IjpbODA0MTE3ODYzLDE1NTIxMzY2OSwxNzkwNz
+EwMjcyLDk2MDU3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4
+MjEzMjI2OTQsMTk2MjMzMDUyNywtNzg4ODMzNzQxLDIwMTcwMT
+Q3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzcsLTExODUxMTk3MTYs
+MTA4NjAzMDYyMiwtOTY4NjIzNDU5LDE5ODMzNzM4OTksLTE2OT
+U0OTAxMDcsLTMzMzI1NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2
+NDU2XX0=
 -->
