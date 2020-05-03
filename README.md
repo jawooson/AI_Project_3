@@ -16,13 +16,13 @@ More context regarding the motivation for this problem is in this  [technical re
 
 ## Intended Structure of documentation
 1. Discuss BoW generally [check]
-2. Discuss BoW NN
+2. Discuss BoW NN 
 3. Discuss BoW implementation in CodeSearchNet
 
 4. Go into how the testing is done, metrics used, methodology. 
-	a. How is testing is done?
-	b. What is MRR, why does MRR need to be used here
-	c. Discuss why leaderboard uses NDCG .
+	a. How is testing is done? [check]
+	b. What is MRR, why does MRR need to be used here [check]
+	c. Discuss why leaderboard uses NDCG . [check]
 
 
 ## 1. Some Notes on Bag of Words Model
@@ -105,11 +105,11 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDYzMzUzMyw4MjEzMjI2OTQsMTk2Mj
-MzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3
-Nyw5Mjg1MDgwMzcsLTExODUxMTk3MTYsMTA4NjAzMDYyMiwtOT
-Y4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1
-NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOT
-Y3LDE3MDA5MTAwODgsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
+eyJoaXN0b3J5IjpbOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
+MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
+LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIyLC05Nj
+g2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0
+ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5Nj
+csMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
 
 -->
