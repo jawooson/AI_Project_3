@@ -53,7 +53,8 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
-
+[bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
+[bow 2](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 
 ## I need to discuss what exactly is being tested.
 * Really unsure right now.
@@ -61,7 +62,6 @@ This is generally what Bag of Words is, it translates text data to a from that i
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  
 
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
-[https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 ### In test.py, MRR is used for test accuracy:
 * Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
@@ -105,11 +105,11 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
-MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
-LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIyLC05Nj
-g2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0
-ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5Nj
-csMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
-
+eyJoaXN0b3J5IjpbMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMz
+IyNjk0LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5
+LDEzMzI4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwOD
+YwMzA2MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkw
+MTA3LC0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1Ni
+wtMTM3MDc3MDk2NywxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIw
+MjMzODE4ODVdfQ==
 -->
