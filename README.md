@@ -100,16 +100,18 @@ Research Papers Referenced and Used:
 3. 
 
 Main challenge github:
-1. [CodeSearchNet](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
+1. [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
 
 Challenge W&B Page:
-[CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
+1. [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNjg5MTQzMSwxNzkwNzEwMjcyLDk2MD
-U3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQs
-MTk2MjMzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMj
-gwMzc3Nyw5Mjg1MDgwMzcsLTExODUxMTk3MTYsMTA4NjAzMDYy
-MiwtOTY4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAxMDcsLT
-MzMzI1NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcw
-NzcwOTY3XX0=
+eyJoaXN0b3J5IjpbMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNT
+c4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwx
+OTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyOD
+AzNzc3LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIy
+LC05Njg2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMz
+MzMjU0ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3
+NzA5NjddfQ==
 -->
