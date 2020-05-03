@@ -75,6 +75,12 @@ The Neural Bag of Words CodeSearchNet baseline model is interesting because it o
 
 Word embedding differs from bag of words. Bag of words suffers from high dimensionality and sparsity, the total number of unique words comprising the vocabulary can be huge, and given any particular document, its vector representation can be mostly zeros. This is not good for neural networks, so word embedding is a different technique that aims to reduce the dimensionality of a words representation. 
 
+In an embedding, words are represented by dense vectors where a vector represents the projection of the word into a continuous vector space.
+
+The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used.
+
+The position of a word in the learned vector space is referred to as its embedding.
+
 
 
 [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
@@ -120,7 +126,7 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzEzMTQ0OTgsLTExNzYyNDgyMzUsMT
+eyJoaXN0b3J5IjpbLTE1OTQyNDIyNTMsLTExNzYyNDgyMzUsMT
 M5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0
 NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2Mj
 MzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3
