@@ -69,7 +69,7 @@ The NBOW model takes an average of the word vectors in the input text and perfor
 
 ## 3 Discuss BoW implementation in CodeSearchNet
 
-The CodeSearchNet baseline model 
+The Neural Bag of Words CodeSearchNet baseline model 
 
 
 ## 4a I need to discuss what exactly is being tested.
@@ -111,11 +111,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzYyNDgyMzUsMTM5Mzg5Nzg2LDE1NT
-IxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0NiwxMjY1Njg2ODYz
-LDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2MjMzMDUyNywtNzg4OD
-MzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzcs
-LTExODUxMTk3MTYsMTA4NjAzMDYyMiwtOTY4NjIzNDU5LDE5OD
-MzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMTU0Mjcz
-ODI5NF19
+eyJoaXN0b3J5IjpbODI2NTkxODA0LC0xMTc2MjQ4MjM1LDEzOT
+M4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYs
+MTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMz
+A1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3Nzcs
+OTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2MjIsLTk2OD
+YyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC0zMzMyNTQ4
+OTJdfQ==
 -->
