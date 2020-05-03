@@ -71,7 +71,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 
 ### In the W&B competition website, nDCG is used to rank different learning methods:
-* Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I wonr 
+* Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the  
 
 
 
@@ -105,11 +105,11 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njk5NTEzNTcsODIxMzIyNjk0LDE5Nj
-IzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3
-NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2MjIsLT
-k2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC0zMzMy
-NTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3MDc3MD
-k2NywxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIwMjMzODE4ODVd
-fQ==
+eyJoaXN0b3J5IjpbMzUxNzQ2NDc5LDgyMTMyMjY5NCwxOTYyMz
+MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
+LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIyLC05Nj
+g2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0
+ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5Nj
+csMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
+
 -->
