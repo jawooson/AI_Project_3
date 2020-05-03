@@ -58,7 +58,7 @@ This is generally what Bag of Words is, it translates text data to a from that i
 [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
 [bow 2](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 
-## I need to discuss what exactly is being tested.
+## 4a I need to discuss what exactly is being tested.
 * Really unsure right now.
 * [https://arxiv.org/pdf/1909.09436.pdf](https://arxiv.org/pdf/1909.09436.pdf) This is a paper regarding the project in general, might offer some good insight. 
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  
@@ -70,6 +70,7 @@ Essentially the NBOW model is a fully connected feed forward network with BOW in
 
 [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
 
+## 
 
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 
@@ -107,11 +108,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNT
-c4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwx
-OTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyOD
-AzNzc3LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIy
-LC05Njg2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMz
-MzMjU0ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3
-NzA5NjddfQ==
+eyJoaXN0b3J5IjpbLTEwNjQwMDA2NjAsMTU1MjEzNjY5LDE3OT
+A3MTAyNzIsOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3
+LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNz
+AxNDc3OSwxMzMyODAzNzc3LDkyODUwODAzNywtMTE4NTExOTcx
+NiwxMDg2MDMwNjIyLC05Njg2MjM0NTksMTk4MzM3Mzg5OSwtMT
+Y5NTQ5MDEwNywtMzMzMjU0ODkyLC0xNTQyNzM4Mjk0LC03MTY3
+NjY0NTZdfQ==
 -->
