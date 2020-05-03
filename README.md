@@ -33,10 +33,16 @@ More context regarding the motivation for this problem is in this  [technical re
 * For BoW, we need to create a vocabulary, which is just all the unique words found in an entire corpus (collection of documents). This will create the vector of words/tokens. If the corpus contains n unique words, then the vector length will be n. A caveat, there are many heuristics into how we choose unique words. Often times we drop out words from our vocabulary that have low term frequency. This is because the value of n can be extremely large, so to limit the size of it we must drop some words.
 
  For each each document, we vectorize it. I provide a classic example on how vectorization is implemented. 
-_“It was the best of times”  
-“It was the worst of times”  
-“It was the age of wisdom”  
-“It was the age of foolishness”_
+
+Given a corpus of 4 documents below:
+1. _“It was the best of times”_
+2. _“It was the worst of times”_  
+3. _“It was the age of wisdom”_
+4. _“It was the age of foolishness”_
+
+The unique words in the corpus are:
+[_‘It’, ‘was’, ‘the’, ‘best’, ‘of’, ‘times’, ‘worst’, ‘age’, ‘wisdom’, ‘foolishness’_]
+
 
 
 
@@ -48,9 +54,9 @@ _“It was the best of times”
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDEwODUwMDEsMTA4NjAzMDYyMiwtOT
-Y4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1
-NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOT
-Y3LDE3MDA5MTAwODgsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
+eyJoaXN0b3J5IjpbMTA3MjA2MzQzOCwxMDg2MDMwNjIyLC05Nj
+g2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0
+ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5Nj
+csMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
 
 -->
