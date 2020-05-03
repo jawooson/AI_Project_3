@@ -75,7 +75,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 
 
-
+[https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
 
 
 
@@ -105,10 +105,10 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY5NzA2MDUsMTk2MjMzMDUyNywtNzg4OD
-MzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzcs
-LTExODUxMTk3MTYsMTA4NjAzMDYyMiwtOTY4NjIzNDU5LDE5OD
-MzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMTU0Mjcz
-ODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5MTAwOD
-gsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
+eyJoaXN0b3J5IjpbODIxMzIyNjk0LDE5NjIzMzA1MjcsLTc4OD
+gzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3NzcsOTI4NTA4MDM3
+LC0xMTg1MTE5NzE2LDEwODYwMzA2MjIsLTk2ODYyMzQ1OSwxOT
+gzMzczODk5LC0xNjk1NDkwMTA3LC0zMzMyNTQ4OTIsLTE1NDI3
+MzgyOTQsLTcxNjc2NjQ1NiwtMTM3MDc3MDk2NywxNzAwOTEwMD
+g4LC02NjYxNzY1NDUsLTIwMjMzODE4ODVdfQ==
 -->
