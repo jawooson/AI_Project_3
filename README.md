@@ -2,6 +2,8 @@
 
 This is an extension of the [CodeSearchNet](https://app.wandb.ai/github/codesearchnet/benchmark) competition. 
 
+Project assignment: 
+
 ## A brief overview of the project
 [CodeSearchNet](https://arxiv.org/abs/1909.09436)  is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this  [blog post](https://githubengineering.com/towards-natural-language-semantic-code-search/)  and is a joint collaboration between GitHub and the  [Deep Program Understanding](https://www.microsoft.com/en-us/research/project/program/)  group at  [Microsoft Research - Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). We aim to provide a platform for community research on semantic code search via the following:
 
@@ -113,11 +115,11 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NT
-gyMDQ3LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEs
-MjAxNzAxNDc3OSwxMzMyODAzNzc3LDkyODUwODAzNywtMTE4NT
-ExOTcxNiwxMDg2MDMwNjIyLC05Njg2MjM0NTksMTk4MzM3Mzg5
-OSwtMTY5NTQ5MDEwNywtMzMzMjU0ODkyLC0xNTQyNzM4Mjk0LC
-03MTY3NjY0NTYsLTEzNzA3NzA5NjcsMTcwMDkxMDA4OCwtNjY2
-MTc2NTQ1XX0=
+eyJoaXN0b3J5IjpbMTc5MDcxMDI3Miw5NjA1NzgxNDYsMTI2NT
+Y4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMzA1Mjcs
+LTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3NzcsOTI4NT
+A4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2MjIsLTk2ODYyMzQ1
+OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC0zMzMyNTQ4OTIsLT
+E1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3MDc3MDk2NywxNzAw
+OTEwMDg4XX0=
 -->
