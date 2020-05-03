@@ -71,7 +71,9 @@ The NBOW model takes an average of the word vectors in the input text and perfor
 
 ## 3 Discuss BoW implementation in CodeSearchNet
 
-The Neural Bag of Words CodeSearchNet baseline model is interesting because it only uses Bag of Words to create tokens and then those tokens are fed into a word emb 
+The Neural Bag of Words CodeSearchNet baseline model is interesting because it only uses Bag of Words to create tokens and then those tokens are fed into a learnable embedding to create the vector representation. 
+
+Word embedding differs from bag of w
 
 
 ## 4a I need to discuss what exactly is being tested.
@@ -113,7 +115,7 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MTA2Mjk3NywtMTE3NjI0ODIzNSwxMz
+eyJoaXN0b3J5IjpbMTMwNjA2NTc4NCwtMTE3NjI0ODIzNSwxMz
 kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
 LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
 MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
