@@ -15,7 +15,7 @@ We hope that CodeSearchNet is a step towards engaging with the broader machine l
 More context regarding the motivation for this problem is in this  [technical report](https://arxiv.org/abs/1909.09436).
 
 ## Intended Structure of documentation
-1. Discuss BoW generally
+1. Discuss BoW generally [check]
 2. Discuss BoW NN
 3. Discuss BoW implementation in CodeSearchNet
 
@@ -71,7 +71,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 
 ### In the W&B competition website, nDCG is used to rank different learning methods:
-* Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the  
+* Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
 
 
@@ -105,11 +105,11 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxNzQ2NDc5LDgyMTMyMjY5NCwxOTYyMz
-MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
-LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIyLC05Nj
-g2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0
-ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5Nj
-csMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
+eyJoaXN0b3J5IjpbMTQxNDYzMzUzMyw4MjEzMjI2OTQsMTk2Mj
+MzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3
+Nyw5Mjg1MDgwMzcsLTExODUxMTk3MTYsMTA4NjAzMDYyMiwtOT
+Y4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1
+NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOT
+Y3LDE3MDA5MTAwODgsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
 
 -->
