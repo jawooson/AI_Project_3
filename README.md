@@ -53,7 +53,7 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
-In the Bag of words 
+In the Bag of ords 
 
 
 ## I need to discuss what exactly is being tested.
@@ -64,7 +64,7 @@ In the Bag of words
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQzNDg0NDEsOTI4NTA4MDM3LC0xMT
+eyJoaXN0b3J5IjpbLTE0NTY5NDc4MTAsOTI4NTA4MDM3LC0xMT
 g1MTE5NzE2LDEwODYwMzA2MjIsLTk2ODYyMzQ1OSwxOTgzMzcz
 ODk5LC0xNjk1NDkwMTA3LC0zMzMyNTQ4OTIsLTE1NDI3MzgyOT
 QsLTcxNjc2NjQ1NiwtMTM3MDc3MDk2NywxNzAwOTEwMDg4LC02
