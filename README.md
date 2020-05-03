@@ -51,7 +51,7 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 “It was the age of wisdom” = [1, 1, 1, 0, 1, 0, 0, 1, 1, 0]  
 “It was the age of foolishness” = [1, 1, 1, 0, 1, 0, 0, 1, 0, 1]_
 
-
+This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
 
 ## I need to discuss what exactly is being tested.
@@ -62,9 +62,9 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODUxMTk3MTYsMTA4NjAzMDYyMiwtOT
-Y4NjIzNDU5LDE5ODMzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1
-NDg5MiwtMTU0MjczODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOT
-Y3LDE3MDA5MTAwODgsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
-
+eyJoaXN0b3J5IjpbOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwOD
+YwMzA2MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkw
+MTA3LC0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1Ni
+wtMTM3MDc3MDk2NywxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIw
+MjMzODE4ODVdfQ==
 -->
