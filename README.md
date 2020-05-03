@@ -67,14 +67,48 @@ This is generally what Bag of Words is, it translates text data to a from that i
 * Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
+[https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+
 
 ### In the W&B competition website, nDCG is used to rank different learning methods:
 * Normalized Discounted Cumulative Gain 
+
+
+
+
+
+
+
+
+
+## Bibliography
+
+Research Papers Referenced and Used:
+1. [Continuous Learning in Single-Incremental-Task Scenarios](https://arxiv.org/abs/1806.08568)
+	* This paper describes Continual Learning, Single-Incremental-Task, New Classes problem, and catastrophic forgetting. They have a great description of the Naive, Rehearsal, and Elastic Weight Consolidation approach to solving Continual Learning. 
+2. [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
+	* This is the first paper to propose the Elastic Weight Consolidation approach to solving Continual Learning. 
+3. [Compete to Compute](https://papers.nips.cc/paper/5059-compete-to-compute)
+	* This paper describes how the order of your training data matters. 
+4. [CORe50: a New Dataset and Benchmark for Continuous Object Recognition](http://proceedings.mlr.press/v78/lomonaco17a/lomonaco17a.pdf)
+	* This paper describes the CORe50 dataset. In addition, the authors used the dataset to test several Continual Learning methods and compare their benchmarks. 
+5. [Memory Efficient Experience Replay for Streaming Learning](https://arxiv.org/abs/1809.05922)
+
+
+Datasets Used:  
+* [CORe50 Dataset](https://vlomonaco.github.io/core50/)
+	* The dataset we use. 
+
+Code Used As a Starting Point: 
+* [CVPR clvision challenge](https://github.com/vlomonaco/cvpr_clvision_challenge)
+	* The starting point for the code we developed. This includes the loader for the CORe50 Dataset. Also, included is the Naive approach to continual learning that we use a baseline benchmark. 
+* [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
+	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjMzMDUyNywtNzg4ODMzNzQxLDIwMT
-cwMTQ3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzcsLTExODUxMTk3
-MTYsMTA4NjAzMDYyMiwtOTY4NjIzNDU5LDE5ODMzNzM4OTksLT
-E2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMTU0MjczODI5NCwtNzE2
-NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5MTAwODgsLTY2NjE3Nj
-U0NSwtMjAyMzM4MTg4NV19
+eyJoaXN0b3J5IjpbMjY5NzA2MDUsMTk2MjMzMDUyNywtNzg4OD
+MzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzcs
+LTExODUxMTk3MTYsMTA4NjAzMDYyMiwtOTY4NjIzNDU5LDE5OD
+MzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMTU0Mjcz
+ODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5MTAwOD
+gsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
 -->
