@@ -61,6 +61,11 @@ This is generally what Bag of Words is, it translates text data to a from that i
 * [https://arxiv.org/pdf/1909.09436.pdf](https://arxiv.org/pdf/1909.09436.pdf) This is a paper regarding the project in general, might offer some good insight. 
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  
 
+## Neural Bag of Words
+The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. 
+[https://www.aclweb.org/anthology/W16-1626.pdf](https://www.aclweb.org/anthology/W16-1626.pdf)
+
+
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 
 ### In test.py, MRR is used for test accuracy:
@@ -105,11 +110,11 @@ Code Used As a Starting Point:
 * [Intro To Continual Learning](https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb)
 	* Provided a model for the implementation of Naive, Rehearsal, and Elastic Weight Consolidation. We used this code in the development of our implementation. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMz
-IyNjk0LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5
-LDEzMzI4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwOD
-YwMzA2MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkw
-MTA3LC0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1Ni
-wtMTM3MDc3MDk2NywxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIw
-MjMzODE4ODVdfQ==
+eyJoaXN0b3J5IjpbODQ1OTMyMzM4LDEyNjU2ODY4NjMsOTE5NT
+gyMDQ3LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEs
+MjAxNzAxNDc3OSwxMzMyODAzNzc3LDkyODUwODAzNywtMTE4NT
+ExOTcxNiwxMDg2MDMwNjIyLC05Njg2MjM0NTksMTk4MzM3Mzg5
+OSwtMTY5NTQ5MDEwNywtMzMzMjU0ODkyLC0xNTQyNzM4Mjk0LC
+03MTY3NjY0NTYsLTEzNzA3NzA5NjcsMTcwMDkxMDA4OCwtNjY2
+MTc2NTQ1XX0=
 -->
