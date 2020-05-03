@@ -64,12 +64,12 @@ This is generally what Bag of Words is, it translates text data to a from that i
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 ### In test.py, MRR is used for test accuracy:
-* Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative
+* Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given that we have 99 different queries, MRR just takes the mean of 
 
 ### In the W&B competition website, nDCG is used to rank different learning methods:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjUwNTIzNywyMDE3MDE0Nzc5LDEzMz
+eyJoaXN0b3J5IjpbLTY2NjY1MTgwOSwyMDE3MDE0Nzc5LDEzMz
 I4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2
 MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC
 0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3
