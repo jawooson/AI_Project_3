@@ -42,8 +42,10 @@ Given a corpus of 4 documents below:
 3. _“It was the age of wisdom”_
 4. _“It was the age of foolishness”_
 
-Our vocabulary, the unique words in the corpus, is:
+Our vocabulary, the unique words in the corpus, :
 [_‘It’, ‘was’, ‘the’, ‘best’, ‘of’, ‘times’, ‘worst’, ‘age’, ‘wisdom’, ‘foolishness’_]
+
+These unique words that comprise the vocabulary are commonly known as tokens. 
 
 We vectorize each individual document by checking the frequency of each word from the n unique words that comprise our vocabulary. 
 
@@ -69,7 +71,7 @@ The NBOW model takes an average of the word vectors in the input text and perfor
 
 ## 3 Discuss BoW implementation in CodeSearchNet
 
-The Neural Bag of Words CodeSearchNet baseline model 
+The Neural Bag of Words CodeSearchNet baseline model is interesting because it only used Bag of Words to create tokens 
 
 
 ## 4a I need to discuss what exactly is being tested.
@@ -111,7 +113,7 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI2NTkxODA0LC0xMTc2MjQ4MjM1LDEzOT
+eyJoaXN0b3J5IjpbNjM4NTMwMjg3LC0xMTc2MjQ4MjM1LDEzOT
 M4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYs
 MTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMz
 A1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3Nzcs
