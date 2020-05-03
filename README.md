@@ -40,10 +40,10 @@ Given a corpus of 4 documents below:
 3. _“It was the age of wisdom”_
 4. _“It was the age of foolishness”_
 
-The unique words in the corpus are:
+Our vocabulary, the unique words in the corpus, :
 [_‘It’, ‘was’, ‘the’, ‘best’, ‘of’, ‘times’, ‘worst’, ‘age’, ‘wisdom’, ‘foolishness’_]
 
-
+We vectorize each individual document by noting the frequency 
 
 
 ## I need to discuss what exactly is being tested.
@@ -54,9 +54,9 @@ The unique words in the corpus are:
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MjA2MzQzOCwxMDg2MDMwNjIyLC05Nj
-g2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0
-ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5Nj
-csMTcwMDkxMDA4OCwtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
+eyJoaXN0b3J5IjpbLTYyMDMwNDczLDEwODYwMzA2MjIsLTk2OD
+YyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC0zMzMyNTQ4
+OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3MDc3MDk2Ny
+wxNzAwOTEwMDg4LC02NjYxNzY1NDUsLTIwMjMzODE4ODVdfQ==
 
 -->
