@@ -94,18 +94,16 @@ This metric used for accuracy is much better than traditional accuracy score bec
 ## Bibliography
 
 Research Papers Referenced and Used:
-1. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf)
-	 *  
-
-2. [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
-	* This is the first paper to propose the Elastic Weight Consolidation approach to solving Continual Learning. 
-
+1. [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
+	* This is the academic paper that is asscoiatde by the creators of the Co
+2. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwMTU0MTI2LDE3OTA3MTAyNzIsOTYwNT
-c4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwx
-OTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyOD
-AzNzc3LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIy
-LC05Njg2MjM0NTksMTk4MzM3Mzg5OSwtMTY5NTQ5MDEwNywtMz
-MzMjU0ODkyLC0xNTQyNzM4Mjk0LC03MTY3NjY0NTYsLTEzNzA3
-NzA5NjddfQ==
+eyJoaXN0b3J5IjpbLTE2MzgxMDIyMDUsMTc5MDcxMDI3Miw5Nj
+A1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0
+LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMz
+I4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2
+MjIsLTk2ODYyMzQ1OSwxOTgzMzczODk5LC0xNjk1NDkwMTA3LC
+0zMzMyNTQ4OTIsLTE1NDI3MzgyOTQsLTcxNjc2NjQ1NiwtMTM3
+MDc3MDk2N119
 -->
