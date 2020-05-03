@@ -29,7 +29,7 @@ More context regarding the motivation for this problem is in this  [technical re
 * [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/) This is a good article discussing generally what BoW is. 
 * It really isn't a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net. 
 * The purpose of Bag of Words is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
-* 
+* This is interesting, because BoW has little to do with the neural net being us
 
 
 
@@ -41,8 +41,8 @@ More context regarding the motivation for this problem is in this  [technical re
 ## I'm going to need to discuss MRR and the other evaluation metrics used. I think this resource will be good. 
 [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzMTc2MTY1LC05Njg2MjM0NTksMTk4Mz
-M3Mzg5OSwtMTY5NTQ5MDEwNywtMzMzMjU0ODkyLC0xNTQyNzM4
-Mjk0LC03MTY3NjY0NTYsLTEzNzA3NzA5NjcsMTcwMDkxMDA4OC
-wtNjY2MTc2NTQ1LC0yMDIzMzgxODg1XX0=
+eyJoaXN0b3J5IjpbMjExNzU2NjA5MSwtOTY4NjIzNDU5LDE5OD
+MzNzM4OTksLTE2OTU0OTAxMDcsLTMzMzI1NDg5MiwtMTU0Mjcz
+ODI5NCwtNzE2NzY2NDU2LC0xMzcwNzcwOTY3LDE3MDA5MTAwOD
+gsLTY2NjE3NjU0NSwtMjAyMzM4MTg4NV19
 -->
