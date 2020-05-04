@@ -118,38 +118,40 @@ This metric used for accuracy is much better than traditional accuracy score bec
 ## Bibliography
 
 Research Papers Referenced and Used:
-1. [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
+[1] [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
 	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
-2. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
-3. 
+
+[2] [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
+
+[3] 
 
 Main challenge github:
-4. [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
+[4] [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
 
 Challenge W&B Page:
-5. [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
+[5] [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
 
 Online Resources cited and used:
-6. [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
-7. [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
-8. [bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
-9. [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
-10. [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
-11. [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
-12. [tensor flow word embedding](https://www.tensorflow.org/tutorials/text/word_embeddings)
-13. [cosine distance](https://www.machinelearningplus.com/nlp/cosine-similarity/)
-14. [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+[6] [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
+[7] [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
+[8] [bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
+[9] [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
+[10] [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
+[11] [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
+[12] [tensor flow word embedding](https://www.tensorflow.org/tutorials/text/word_embeddings)
+[13] [cosine distance](https://www.machinelearningplus.com/nlp/cosine-similarity/)
+[14] [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzY2MTg1MCwxMTA2NTY3NTU5LDExMz
-M0MTg4NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4
-NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMwNjcyLC0xMT
-c2MjQ4MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3
-Miw5NjA1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMz
-IyNjk0LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5
-XX0=
+eyJoaXN0b3J5IjpbLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMT
+MzNDE4ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0
+ODYsMTQ0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMT
+E3NjI0ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAy
+NzIsOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMT
+MyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3
+OV19
 -->
