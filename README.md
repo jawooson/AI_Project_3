@@ -20,10 +20,10 @@ More context regarding the motivation for this problem is in this  [technical re
 2. Neural Bag of Words
 3. CodeSearchNet Baseline Model: Neural Bag of Words
 
-4. Testing
-	4a. How does CodeSearchNet Implement Testing?
-	4b. Metrics for Test Accuracy: MRR
-	4c. Metrics for Test Accuracy: nDCG
+4. Testing  
+	4a. How does CodeSearchNet Implement Testing?  
+	4b. Metrics for Test Accuracy: MRR  
+	4c. Metrics for Test Accuracy: nDCG  
 
 5. Pre-trained model results
 
@@ -136,7 +136,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjYxMzc2MCw1ODM1NDA0NTMsLTExND
+eyJoaXN0b3J5IjpbMTA0Nzk0NDk2MCw1ODM1NDA0NTMsLTExND
 Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
 ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
 Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
