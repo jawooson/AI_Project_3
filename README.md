@@ -62,9 +62,10 @@ While this idea sounds very simple, there are many different methodologies in ho
 
 
 ## 2 Neural Bag of Words
-The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. 
+**The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input.**
+### Reword this!
 
-[Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
+[[2]](https://www.aclweb.org/anthology/W16-1626.pdf)
 
 
 ## 3 Discuss BoW implementation in CodeSearchNet
@@ -80,7 +81,7 @@ The position of a word within the vector space is learned from text and is based
 The position of a word in the learned vector space is referred to as its embedding.
 
 
-**Inset figure 3 image here**
+**Insert figure 3 image here**
  [[1]](https://arxiv.org/pdf/1909.09436.pdf)
 
 
@@ -146,11 +147,11 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI5NTI5NTQzLDExMzM0MTg4NzYsOTYwOD
-Q4OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4NiwxNDQxNTY2NTA5
-LDIwNzI3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4MjM1LDEzOT
-M4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYs
-MTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMz
-A1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3Nzdd
-fQ==
+eyJoaXN0b3J5IjpbMTQ0ODU5ODE3MywxMTMzNDE4ODc2LDk2MD
+g0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUw
+OSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMz
+kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
+LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
+MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
+XX0=
 -->
