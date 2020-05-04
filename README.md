@@ -97,7 +97,7 @@ Cosine distance is commonly used in tasks utilizing text data because Euclidean 
 * Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
-[[14]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+[[13]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
 ## 4c In the W&B competition website, nDCG is used to rank different learning methods:
@@ -110,14 +110,14 @@ This metric used for accuracy is much better than traditional accuracy score bec
 [https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png](https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png)
 
 
-[[14]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
+[[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
 
 
 
 
 ## Bibliography
 
-Research Papers Referenced and Used:
+**Research Papers Referenced and Used:**
 [1] [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
 	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
 
@@ -125,32 +125,32 @@ Research Papers Referenced and Used:
 
 [3] [Measuring Similarity of Academic Articles with Semantic Profile and Joint Word Embedding](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8195345)
 
-Main challenge github:
+**Main challenge github:**
 [4] [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
 
-Challenge W&B Page:
+**Challenge W&B Page:**
 [5] [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
 
-Online Resources cited and used:
+**Online Resources cited and used:**
 [6] [How to Develop a Deep Learning Bag-of-Words Model for Sentiment Analysis (Text Classification)](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
 [7] [A Gentle Introduction to the Bag-of-Words Model](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
 [8] [An Introduction to Bag-of-Words in NLP](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 [9] [How to Use Word Embedding Layers for Deep Learning with Keras](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
-[10] [Word embedding](https://en.wikipedia.org/wiki/Word_embedding)
-[11] [Word embeddings](https://www.tensorflow.org/tutorials/text/word_embeddings)
-[12] [cosine distance](https://www.machinelearningplus.com/nlp/cosine-similarity/)
-[13] [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+[10] [Wikipedia: Word embedding](https://en.wikipedia.org/wiki/Word_embedding)
+[11] [Tensorflow Documentation: Word embeddings](https://www.tensorflow.org/tutorials/text/word_embeddings)
+[12] [Cosine Similarity – Understanding the math and how it works (with python codes)](https://www.machinelearningplus.com/nlp/cosine-similarity/)
+[13] [MRR vs MAP vs NDCG: Rank-Aware Evaluation Metrics And When To Use Them](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDc2OTYzNDYsLTExNDY5NDg0NzMsLT
-E3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4ODc2LDk2MDg0
-ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUwOS
-wyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMzkz
-ODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2LD
-EyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMzMw
-NTI3XX0=
+eyJoaXN0b3J5IjpbMTkzMTIxNTA5NiwtMTE0Njk0ODQ3MywtMT
+c2ODY1NjQyOCwxMTA2NTY3NTU5LDExMzM0MTg4NzYsOTYwODQ4
+OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4NiwxNDQxNTY2NTA5LD
+IwNzI3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4MjM1LDEzOTM4
+OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYsMT
+I2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMzA1
+MjddfQ==
 -->
