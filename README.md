@@ -81,7 +81,7 @@ The position of a word within the vector space is learned from text and is based
 
 The position of a word in the learned vector space is referred to as its embedding. 
 
-In the Neural Bag of Words Model, the code to be evaluated and the query 
+In the Neural Bag of Words Model, the code to be evaluated and the NLP query are made into tokens. This is the bag of words stage in the nBoW model. After tokens are made, they are fed into a word embedder (sequence encoder). This creates vector representation in a predefined vector space (0
 
 [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
@@ -126,7 +126,7 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3OTU1NDE2LDExMTc2OTM0ODYsMTQ0MT
+eyJoaXN0b3J5IjpbNjQxMzAyMTM0LDExMTc2OTM0ODYsMTQ0MT
 U2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIz
 NSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNT
 c4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwx
