@@ -54,7 +54,8 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 “It was the worst of times” = [1, 1, 1, 0, 1, 1, 1, 0, 0, 0]  
 “It was the age of wisdom” = [1, 1, 1, 0, 1, 0, 0, 1, 1, 0]  
 “It was the age of foolishness” = [1, 1, 1, 0, 1, 0, 0, 1, 0, 1]_
-[[example from here medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)]
+ 
+ Example taken from [[8]](https://arxiv.org/pdf/1909.09436.pdf).
 
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
@@ -62,7 +63,7 @@ While this idea sounds very simple, there are many different methodologies in ho
 
 
 ## 2 Neural Bag of Words
-**The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input.**
+The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input.
 ### Reword this!
 
 [[2]](https://www.aclweb.org/anthology/W16-1626.pdf)
@@ -147,7 +148,7 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODU5ODE3MywxMTMzNDE4ODc2LDk2MD
+eyJoaXN0b3J5IjpbLTM2MTYzNjUwOCwxMTMzNDE4ODc2LDk2MD
 g0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUw
 OSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMz
 kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
