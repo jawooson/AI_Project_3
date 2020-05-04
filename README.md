@@ -77,7 +77,7 @@ Word embedding differs from bag of words. Bag of words suffers from high dimensi
 
 "In an embedding, words are represented by dense vectors where a vector represents the projection of the word into a continuous vector space.
 
-The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used." [[10]](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
+The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used." [[9]](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 
 The position of a word in the learned vector space is referred to as its embedding.
 
@@ -88,7 +88,7 @@ The position of a word in the learned vector space is referred to as its embeddi
 
 In the Neural Bag of Words Model, the code to be evaluated and the NLP query are made into tokens. This is the bag of words stage in the nBoW model. After tokens are made, they are fed into a word embedder (sequence encoder). This creates vector representations, of the code and the query, in a predefined vector space (ex R^4). Finally, the distance is measured between the code and the query, which creates the ranking from closest to furthest. The default distance formula used is the cosine distance.
 
-Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[13]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
+Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[12]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
 ## 4a I need to discuss what exactly is being tested.
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
@@ -146,11 +146,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTIxNTA5NiwtMTE0Njk0ODQ3MywtMT
-c2ODY1NjQyOCwxMTA2NTY3NTU5LDExMzM0MTg4NzYsOTYwODQ4
-OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4NiwxNDQxNTY2NTA5LD
-IwNzI3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4MjM1LDEzOTM4
-OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYsMT
-I2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMzA1
-MjddfQ==
+eyJoaXN0b3J5IjpbNTgzNTQwNDUzLC0xMTQ2OTQ4NDczLC0xNz
+Y4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQxODg3Niw5NjA4NDg5
+NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1MDksMj
+A3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMTM5Mzg5
+Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0NiwxMj
+Y1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2MjMzMDUy
+N119
 -->
