@@ -134,20 +134,19 @@ Challenge W&B Page:
 Online Resources cited and used:
 [6] [How to Develop a Deep Learning Bag-of-Words Model for Sentiment Analysis (Text Classification)](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
 [7] [A Gentle Introduction to the Bag-of-Words Model](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
-[8] [bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
-[9] [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
-[10] [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
-[11] [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
-[12] [tensor flow word embedding](https://www.tensorflow.org/tutorials/text/word_embeddings)
-[13] [cosine distance](https://www.machinelearningplus.com/nlp/cosine-similarity/)
-[14] [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+[8] [An Introduction to Bag-of-Words in NLP](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
+[9] [How to Use Word Embedding Layers for Deep Learning with Keras](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
+[10] [Word embedding](https://en.wikipedia.org/wiki/Word_embedding)
+[11] [Word embeddings](https://www.tensorflow.org/tutorials/text/word_embeddings)
+[12] [cosine distance](https://www.machinelearningplus.com/nlp/cosine-similarity/)
+[13] [https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTg0NDY5MzYsLTExNDY5NDg0NzMsLT
+eyJoaXN0b3J5IjpbLTE4MDc2OTYzNDYsLTExNDY5NDg0NzMsLT
 E3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4ODc2LDk2MDg0
 ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUwOS
 wyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMzkz
