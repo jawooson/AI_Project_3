@@ -28,7 +28,7 @@ More context regarding the motivation for this problem is in this  [technical re
 5. pretrained model results
 
 ## 1. Some Notes on Bag of Words Model
-* [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/) This is a good article discussing generally what BoW is. 
+
 * It really isn't a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net. 
 * The purpose of Bag of Words is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
 * This is interesting, because BoW has little to do with the neural net being used to model the data, it is simply a preprocessing step. The difficult part is knowing which deep learning model to use with this text data. Also, there are many ways to vectorize text data. 
@@ -59,9 +59,6 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
 While this idea sounds very simple, there are many different methodologies in how to vectorize text data, such as dropping out low frequency words, using different metrics in the vectorized notation such as term frequency or inverse document frequency.
-
-[bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
-[bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 
 
 ## 2 Neural Bag of Words
@@ -130,13 +127,18 @@ Main challenge github:
 Challenge W&B Page:
 1. [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
 
+Online Resources cited and used:
+* [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
+* [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
+* [bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
+* [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NzQ0MTIsMTEzMzQxODg3Niw5NjA4ND
-g5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1MDks
-MjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMTM5Mz
-g5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0Niwx
-MjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2MjMzMD
-UyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3N119
-
+eyJoaXN0b3J5IjpbLTE2OTM5MjI4MjEsMTEzMzQxODg3Niw5Nj
+A4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1
+MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMT
+M5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0
+NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2Mj
+MzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3
+N119
 -->
