@@ -122,19 +122,26 @@ Research Papers Referenced and Used:
 3. 
 
 Main challenge github:
-1. [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
+4. [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
 
 Challenge W&B Page:
-1. [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
+5. [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
 
 Online Resources cited and used:
-* [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
-* [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
-* [bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
-* [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
+6. [https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
+7. [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
+8. [bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
+9. [Academic paper discussing nbow](https://www.aclweb.org/anthology/W16-1626.pdf)
+10. [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
+11. [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
+12. [tensor flow word embedding](https://www.tensorflow.org/tutorials/text/word_embeddings)
+13. [cosine distance](https://www.machinelearningplus.com/nlp/cosine-similarity/)
+
+
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM5MjI4MjEsMTEzMzQxODg3Niw5Nj
+eyJoaXN0b3J5IjpbLTExMzc1OTg3NDcsMTEzMzQxODg3Niw5Nj
 A4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1
 MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMT
 M5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0
