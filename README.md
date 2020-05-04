@@ -66,9 +66,9 @@ The NBOW model takes an average of the word vectors in the input text and perfor
 
 
 ## 3. CodeSearchNet Baseline Model: Neural Bag of Words
-The Neural Bag of Words CodeSearchNet baseline model is interesting because it only uses Bag of Words to create tokens and then those tokens are fed into a learnable embedding to create the vector representation. 
+The Neural Bag of Words baseline model used by CodeSearchNet is interesting because it only uses Bag of Words to create tokens and then those tokens are fed into a learnable embedding to create the vector representation. 
 
-Word embedding differs from bag of words. Bag of words suffers from high dimensionality and sparsity, the total number of unique words comprising the vocabulary can be huge, and given any particular document, its vector representation can be mostly zeros. This is not good for neural networks, so word embedding is a different technique that aims to reduce the dimensionality of a words representation. 
+Word embedding differs from bag of words. Bag of words suffers from high dimensionality and sparsity. The total number of unique words comprising the vocabulary can be huge, and given any particular document, its vector representation can be mostly zeros. This is not good for neural networks, so word embedding is a different technique that aims to reduce the dimensionality of a words representation. 
 
 "In an embedding, words are represented by dense vectors where a vector represents the projection of the word into a continuous vector space.
 
@@ -135,7 +135,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2OTE4NTYzOCw1ODM1NDA0NTMsLTExND
+eyJoaXN0b3J5IjpbLTIwMTYxMzMzMCw1ODM1NDA0NTMsLTExND
 Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
 ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
 Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
