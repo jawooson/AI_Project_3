@@ -104,7 +104,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
 #### Add picture found in AI/Assignment_3/readme_images/ndcg_diagram.png
-<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png" width=75%/></div>
+
 
 
 [https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png](https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png)
@@ -121,7 +121,7 @@ Research Papers Referenced and Used:
 1. [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
 	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
 2. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
-3.
+3. 
 
 Main challenge github:
 4. [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
@@ -145,7 +145,7 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNjc1MzY3MywxMTA2NTY3NTU5LDExMz
+eyJoaXN0b3J5IjpbLTExNzY2MTg1MCwxMTA2NTY3NTU5LDExMz
 M0MTg4NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4
 NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMwNjcyLC0xMT
 c2MjQ4MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3
