@@ -83,7 +83,7 @@ The position of a word in the learned vector space is referred to as its embeddi
 
 In the Neural Bag of Words Model, the code to be evaluated and the NLP query are made into tokens. This is the bag of words stage in the nBoW model. After tokens are made, they are fed into a word embedder (sequence encoder). This creates vector representations, of the code and the query, in a predefined vector space (ex R^4). Finally, the distance is measured between the code and the query, which creates the ranking from closest to furthest. The default distance formula used is the cosine distance.
 
-Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. 
+Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. 
 
 
 [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
@@ -131,11 +131,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDYxNTMwMSwxNzg2NDA5OTk5LDExMT
-c2OTM0ODYsMTQ0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3
-MiwtMTE3NjI0ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OT
-A3MTAyNzIsOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3
-LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNz
-AxNDc3OSwxMzMyODAzNzc3LDkyODUwODAzNywtMTE4NTExOTcx
-Nl19
+eyJoaXN0b3J5IjpbOTYwODQ4OTY4LDE3ODY0MDk5OTksMTExNz
+Y5MzQ4NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMwNjcy
+LC0xMTc2MjQ4MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMTc5MD
+cxMDI3Miw5NjA1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcs
+ODIxMzIyNjk0LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MD
+E0Nzc5LDEzMzI4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2
+XX0=
 -->
