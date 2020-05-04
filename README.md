@@ -63,10 +63,7 @@ While this idea sounds very simple, there are many different methodologies in ho
 
 
 ## 2 Neural Bag of Words
-The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input.
-### Reword this!
-
-[[2]](https://www.aclweb.org/anthology/W16-1626.pdf)
+The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. [[2]](https://www.aclweb.org/anthology/W16-1626.pdf)
 
 
 ## 3 Discuss BoW implementation in CodeSearchNet
@@ -94,7 +91,7 @@ Cosine distance is commonly used in tasks utilizing text data because Euclidean 
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
 
 ## 4b In test.py, MRR is used for test accuracy:
-* Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
+Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
 [[13]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
@@ -146,11 +143,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzNTQwNDUzLC0xMTQ2OTQ4NDczLC0xNz
-Y4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQxODg3Niw5NjA4NDg5
-NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1MDksMj
-A3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMTM5Mzg5
-Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0NiwxMj
-Y1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2MjMzMDUy
-N119
+eyJoaXN0b3J5IjpbLTE0OTE2MjgzODYsNTgzNTQwNDUzLC0xMT
+Q2OTQ4NDczLC0xNzY4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQx
+ODg3Niw5NjA4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LD
+E0NDE1NjY1MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYy
+NDgyMzUsMTM5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLD
+k2MDU3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2
+OTRdfQ==
 -->
