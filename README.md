@@ -115,13 +115,13 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 [3] [Measuring Similarity of Academic Articles with Semantic Profile and Joint Word Embedding](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8195345)
 
-**Main challenge github:**
+**Main challenge github:**  
 [4] [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
 
-**Challenge W&B Page:**
+**Challenge W&B Page:**  
 [5] [CodeSearchNet W&B](https://app.wandb.ai/github/codesearchnet/benchmark)
 
-**Online Resources cited and used:**
+**Online Resources cited and used:**  
 [6] [How to Develop a Deep Learning Bag-of-Words Model for Sentiment Analysis (Text Classification)](https://machinelearningmastery.com/deep-learning-bag-of-words-model-sentiment-analysis/)
 [7] [A Gentle Introduction to the Bag-of-Words Model](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
 [8] [An Introduction to Bag-of-Words in NLP](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
@@ -136,7 +136,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjgxMTM0MCw1ODM1NDA0NTMsLTExND
+eyJoaXN0b3J5IjpbMjAwODI5MzQyOCw1ODM1NDA0NTMsLTExND
 Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
 ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
 Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
