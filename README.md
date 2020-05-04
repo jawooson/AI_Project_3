@@ -86,26 +86,20 @@ In the Neural Bag of Words Model, the code to be evaluated and the NLP query are
 
 Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[12]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
-## 4a. How 
+## 4a. How does CodeSearchNet Implement Testing
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
 
-## 4b In test.py, MRR is used for test accuracy:
+## 4b. Metrics for Test Accuracy: MRR
 Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
 [[13]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
-## 4c In the W&B competition website, nDCG is used to rank different learning methods:
+## 4c. Metrics for Test Accuracy: nDCG
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
 #### Add picture found in AI/Assignment_3/readme_images/ndcg_diagram.png
-
-
-
-[https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png](https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png)
-
-
 [[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
 
 
@@ -113,7 +107,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 ## Bibliography
 
-**Research Papers Referenced and Used:**
+**Research Papers Referenced and Used:**  
 [1] [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
 	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
 
@@ -142,11 +136,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzI4MjM4MDYsNTgzNTQwNDUzLC0xMT
-Q2OTQ4NDczLC0xNzY4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQx
-ODg3Niw5NjA4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LD
-E0NDE1NjY1MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYy
-NDgyMzUsMTM5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLD
-k2MDU3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2
-OTRdfQ==
+eyJoaXN0b3J5IjpbLTQyNjgxMTM0MCw1ODM1NDA0NTMsLTExND
+Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
+ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
+Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
+ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOT
+YwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5
+NF19
 -->
