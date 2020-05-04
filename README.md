@@ -29,12 +29,12 @@ More context regarding the motivation for this problem is in this  [technical re
 
 ## 1. Bag of Words Model
 
-* The Bag of Words (BoW) model does not do prediction. It is a feature engineering pre processing step that is then fed into a neural net. 
-* The purpose of Bag of Words is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
-* This is interesting, because BoW has little to do with the neural net being used to model the data, it is simply a preprocessing step. The difficult part is knowing which deep learning model to use with this text data. Also, there are many ways to vectorize text data. 
+* The Bag of Words (BoW) model does not do prediction. It is a feature engineering pre processing step.
+* The purpose of BoW is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
+* The difficult part is knowing which deep learning model to use with this text data. Also, there are many ways to vectorize text data. 
 * For BoW, we need to create a vocabulary, which is just all the unique words found in an entire corpus (collection of documents). This will create the vector of words/tokens. If the corpus contains n unique words, then the vector length will be n. A caveat, there are many heuristics into how we choose unique words. Often times we drop out words from our vocabulary that have low term frequency. This is because the value of n can be extremely large, so to limit the size of it we must drop some words.
 
- For each each document, we vectorize it. I provide a classic example on how vectorization is implemented. 
+For each each document, we vectorize it. I provide an example on how vectorization is implemented. 
 
 Given a corpus of 4 documents below:
 1. _“It was the best of times”_
@@ -136,11 +136,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjEyODExNSw1ODM1NDA0NTMsLTExND
-Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
-ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
-Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
-ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOT
-YwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5
-NF19
+eyJoaXN0b3J5IjpbLTEyMzcyOTcyNjcsNTgzNTQwNDUzLC0xMT
+Q2OTQ4NDczLC0xNzY4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQx
+ODg3Niw5NjA4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LD
+E0NDE1NjY1MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYy
+NDgyMzUsMTM5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLD
+k2MDU3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2
+OTRdfQ==
 -->
