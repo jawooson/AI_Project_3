@@ -27,7 +27,7 @@ More context regarding the motivation for this problem is in this  [technical re
 
 5. pretrained model results
 
-## 1. Some Notes on Bag of Words Model
+## 1. Bag of Words Model
 
 * It really isn't a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net. 
 * The purpose of Bag of Words is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
@@ -62,12 +62,11 @@ This is generally what Bag of Words is, it translates text data to a from that i
 While this idea sounds very simple, there are many different methodologies in how to vectorize text data, such as dropping out low frequency words, using different metrics in the vectorized notation such as term frequency or inverse document frequency.
 
 
-## 2 Neural Bag of Words
+## 2. Neural Bag of Words
 The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. [[2]](https://www.aclweb.org/anthology/W16-1626.pdf)
 
 
-## 3 Discuss BoW implementation in CodeSearchNet
-
+## 3. CodeSearchNet Baseline Model: Neural Bag of Words
 The Neural Bag of Words CodeSearchNet baseline model is interesting because it only uses Bag of Words to create tokens and then those tokens are fed into a learnable embedding to create the vector representation. 
 
 Word embedding differs from bag of words. Bag of words suffers from high dimensionality and sparsity, the total number of unique words comprising the vocabulary can be huge, and given any particular document, its vector representation can be mostly zeros. This is not good for neural networks, so word embedding is a different technique that aims to reduce the dimensionality of a words representation. 
@@ -87,7 +86,7 @@ In the Neural Bag of Words Model, the code to be evaluated and the NLP query are
 
 Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[12]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
-## 4a I need to discuss what exactly is being tested.
+## 4a. How 
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
 
 ## 4b In test.py, MRR is used for test accuracy:
@@ -143,7 +142,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE2MjgzODYsNTgzNTQwNDUzLC0xMT
+eyJoaXN0b3J5IjpbLTE3MzI4MjM4MDYsNTgzNTQwNDUzLC0xMT
 Q2OTQ4NDczLC0xNzY4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQx
 ODg3Niw5NjA4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LD
 E0NDE1NjY1MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYy
