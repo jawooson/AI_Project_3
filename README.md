@@ -20,9 +20,12 @@ More context regarding the motivation for this problem is in this  [technical re
 2. Neural Bag of Words
 3. CodeSearchNet Baseline Model: Neural Bag of Words
 
-4a. 
+4. Testing
+	4a. How does CodeSearchNet Implement Testing?
+	4b. Metrics for Test Accuracy: MRR
+	4c. Metrics for Test Accuracy: nDCG
 
-5. pretrained model results
+5. Pre-trained model results
 
 ## 1. Bag of Words Model
 
@@ -83,7 +86,7 @@ In the Neural Bag of Words Model, the code to be evaluated and the NLP query are
 
 Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[12]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
-## 4a. How does CodeSearchNet Implement Testing
+## 4a. How does CodeSearchNet Implement Testing?
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
 
 ## 4b. Metrics for Test Accuracy: MRR
@@ -133,7 +136,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzI0MzE0MSw1ODM1NDA0NTMsLTExND
+eyJoaXN0b3J5IjpbLTk3MjYxMzc2MCw1ODM1NDA0NTMsLTExND
 Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
 ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
 Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
