@@ -75,7 +75,7 @@ Word embedding differs from bag of words. Bag of words suffers from high dimensi
 
 "In an embedding, words are represented by dense vectors where a vector represents the projection of the word into a continuous vector space.
 
-The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used." [word embedding article 1]
+The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used." [[10]](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 
 The position of a word in the learned vector space is referred to as its embedding.
 
@@ -105,7 +105,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 #### Add picture found in AI/Assignment_3/readme_images
 
-[[1]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
+[[14]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
 
 
 
@@ -141,7 +141,7 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDMzMDI3MywxMTMzNDE4ODc2LDk2MD
+eyJoaXN0b3J5IjpbMTEwMjYyNDk4OSwxMTMzNDE4ODc2LDk2MD
 g0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUw
 OSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMz
 kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
