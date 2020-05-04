@@ -53,7 +53,7 @@ Rest of the documents will be:
 _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]  
 “It was the worst of times” = [1, 1, 1, 0, 1, 1, 1, 0, 0, 0]  
 “It was the age of wisdom” = [1, 1, 1, 0, 1, 0, 0, 1, 1, 0]  
-“It was the age of foolishness” = [1, 1, 1, 0, 1, 0, 0, 1, 0, 1]_
+“It was the age of foolishness” = [1, 1, 1, 0, 1, 0, 0, 1, 0, 1]_  
  [[8]](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428) .
 
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
@@ -135,11 +135,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NjczMzM2LDU4MzU0MDQ1MywtMTE0Nj
-k0ODQ3MywtMTc2ODY1NjQyOCwxMTA2NTY3NTU5LDExMzM0MTg4
-NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4NiwxND
-QxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4
-MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5Nj
-A1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0
-XX0=
+eyJoaXN0b3J5IjpbMTI0Nzc1MTExMiw1ODM1NDA0NTMsLTExND
+Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
+ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
+Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
+ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOT
+YwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5
+NF19
 -->
