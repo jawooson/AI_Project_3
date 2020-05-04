@@ -15,15 +15,12 @@ We hope that CodeSearchNet is a step towards engaging with the broader machine l
 
 More context regarding the motivation for this problem is in this  [technical report](https://arxiv.org/abs/1909.09436).
 
-## Intended Structure of documentation
-1. Discuss BoW generally [check]
-2. Discuss BoW NN 
-3. Discuss BoW implementation in CodeSearchNet
+## Structure of Documentation
+1. Bag of Words Model
+2. Neural Bag of Words
+3. CodeSearchNet Baseline Model: Neural Bag of Words
 
-4. Go into how the testing is done, metrics used, methodology. 
-	a. How is testing is done? [check]
-	b. What is MRR, why does MRR need to be used here [check]
-	c. Discuss why leaderboard uses NDCG . [check]
+4a. 
 
 5. pretrained model results
 
@@ -136,7 +133,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzU2NjAzMCw1ODM1NDA0NTMsLTExND
+eyJoaXN0b3J5IjpbLTU1NzI0MzE0MSw1ODM1NDA0NTMsLTExND
 Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
 ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
 Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
