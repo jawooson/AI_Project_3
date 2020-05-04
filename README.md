@@ -79,9 +79,14 @@ The position of a word within the vector space is learned from text and is based
 
 The position of a word in the learned vector space is referred to as its embedding.
 
+
+**Inset figure 3 image here**
+ [[1]](https://arxiv.org/pdf/1909.09436.pdf)
+
+
 In the Neural Bag of Words Model, the code to be evaluated and the NLP query are made into tokens. This is the bag of words stage in the nBoW model. After tokens are made, they are fed into a word embedder (sequence encoder). This creates vector representations, of the code and the query, in a predefined vector space (ex R^4). Finally, the distance is measured between the code and the query, which creates the ranking from closest to furthest. The default distance formula used is the cosine distance.
 
-Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. 
+Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[13]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
 
 [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
@@ -117,7 +122,7 @@ Research Papers Referenced and Used:
 1. [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)
 	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
 2. [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
-3. 
+3.
 
 Main challenge github:
 4. [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
@@ -141,11 +146,11 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjYyNDk4OSwxMTMzNDE4ODc2LDk2MD
-g0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUw
-OSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMz
-kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
-LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
-MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
-XX0=
+eyJoaXN0b3J5IjpbMjI5NTI5NTQzLDExMzM0MTg4NzYsOTYwOD
+Q4OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4NiwxNDQxNTY2NTA5
+LDIwNzI3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4MjM1LDEzOT
+M4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYs
+MTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMz
+A1MjcsLTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3Nzdd
+fQ==
 -->
