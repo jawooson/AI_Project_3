@@ -29,7 +29,7 @@ More context regarding the motivation for this problem is in this  [technical re
 
 ## 1. Bag of Words Model
 
-* It really isn't a NN structure per say, it is a feature engineering pre processing step (BoW) that is then fed into a neural net. 
+* The Bag of Words (BoW) model does not do prediction. It is a feature engineering pre processing step that is then fed into a neural net. 
 * The purpose of Bag of Words is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
 * This is interesting, because BoW has little to do with the neural net being used to model the data, it is simply a preprocessing step. The difficult part is knowing which deep learning model to use with this text data. Also, there are many ways to vectorize text data. 
 * For BoW, we need to create a vocabulary, which is just all the unique words found in an entire corpus (collection of documents). This will create the vector of words/tokens. If the corpus contains n unique words, then the vector length will be n. A caveat, there are many heuristics into how we choose unique words. Often times we drop out words from our vocabulary that have low term frequency. This is because the value of n can be extremely large, so to limit the size of it we must drop some words.
@@ -136,7 +136,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzE3OTczNCw1ODM1NDA0NTMsLTExND
+eyJoaXN0b3J5IjpbMTk5NjEyODExNSw1ODM1NDA0NTMsLTExND
 Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
 ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
 Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
