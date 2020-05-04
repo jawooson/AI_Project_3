@@ -108,8 +108,8 @@ This metric used for accuracy is much better than traditional accuracy score bec
 ## Bibliography
 
 **Research Papers Referenced and Used:**  
-[1] [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf)  
-	* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
+[1] [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf) 
+* This is the academic paper that is associated by the creators of the CodeSearchNet Challenge. The paper goes into more detail regarding testing and how each baseline model is used. 
 
 [2] [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
 
@@ -136,7 +136,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MjgwNTgxMiw1ODM1NDA0NTMsLTExND
+eyJoaXN0b3J5IjpbLTI2MzU2NjAzMCw1ODM1NDA0NTMsLTExND
 Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
 ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
 Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
