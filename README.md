@@ -75,11 +75,11 @@ The Neural Bag of Words CodeSearchNet baseline model is interesting because it o
 
 Word embedding differs from bag of words. Bag of words suffers from high dimensionality and sparsity, the total number of unique words comprising the vocabulary can be huge, and given any particular document, its vector representation can be mostly zeros. This is not good for neural networks, so word embedding is a different technique that aims to reduce the dimensionality of a words representation. 
 
-In an embedding, words are represented by dense vectors where a vector represents the projection of the word into a continuous vector space.
+"In an embedding, words are represented by dense vectors where a vector represents the projection of the word into a continuous vector space.
 
-The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used.
+The position of a word within the vector space is learned from text and is based on the words that surround the word when it is used." [word embedding article 1]
 
-The position of a word in the learned vector space is referred to as its embedding. 
+The position of a word in the learned vector space is referred to as its embedding.
 
 In the Neural Bag of Words Model, the code to be evaluated and the NLP query are made into tokens. This is the bag of words stage in the nBoW model. After tokens are made, they are fed into a word embedder (sequence encoder). This creates vector representations, of the code and the query, in a predefined vector space (ex R^4). Finally, the distance is measured between the code and the query, which creates the ranking from closest to furthest. The default distance formula used is the cosine distance.
 
@@ -131,11 +131,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwODQ4OTY4LDE3ODY0MDk5OTksMTExNz
-Y5MzQ4NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMwNjcy
-LC0xMTc2MjQ4MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMTc5MD
-cxMDI3Miw5NjA1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcs
-ODIxMzIyNjk0LDE5NjIzMzA1MjcsLTc4ODgzMzc0MSwyMDE3MD
-E0Nzc5LDEzMzI4MDM3NzcsOTI4NTA4MDM3LC0xMTg1MTE5NzE2
-XX0=
+eyJoaXN0b3J5IjpbMTEzMzQxODg3Niw5NjA4NDg5NjgsMTc4Nj
+QwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1MDksMjA3Mjc3MzUz
+LC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMTM5Mzg5Nzg2LDE1NT
+IxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0NiwxMjY1Njg2ODYz
+LDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2MjMzMDUyNywtNzg4OD
+MzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzdd
+fQ==
 -->
