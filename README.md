@@ -81,7 +81,7 @@ The position of a word within the vector space is learned from text and is based
 
 The position of a word in the learned vector space is referred to as its embedding. 
 
-In the Neural Bag of Words Model, the 
+In the Neural Bag of Words Model, the code to be evaluated and the query 
 
 [word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 [word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
@@ -126,11 +126,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNzY5MzQ4NiwxNDQxNTY2NTA5LDIwNz
-I3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4MjM1LDEzOTM4OTc4
-NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYsMTI2NT
-Y4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0LDE5NjIzMzA1Mjcs
-LTc4ODgzMzc0MSwyMDE3MDE0Nzc5LDEzMzI4MDM3NzcsOTI4NT
-A4MDM3LC0xMTg1MTE5NzE2LDEwODYwMzA2MjIsLTk2ODYyMzQ1
-OV19
+eyJoaXN0b3J5IjpbNjM3OTU1NDE2LDExMTc2OTM0ODYsMTQ0MT
+U2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIz
+NSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNT
+c4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwx
+OTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyOD
+AzNzc3LDkyODUwODAzNywtMTE4NTExOTcxNiwxMDg2MDMwNjIy
+XX0=
 -->
