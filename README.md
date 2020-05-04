@@ -123,7 +123,7 @@ Research Papers Referenced and Used:
 
 [2] [Learning Word Importance with the Neural Bag-of-Words Model](https://www.aclweb.org/anthology/W16-1626.pdf) 
 
-[3] 
+[3] [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8195345](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8195345)
 
 Main challenge github:
 [4] [CodeSearchNet Github](https://github.com/github/CodeSearchNet/tree/e792e1caea20fbd4fba439565fe20c10d4798435)
@@ -147,11 +147,11 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMT
-MzNDE4ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0
-ODYsMTQ0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMT
-E3NjI0ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAy
-NzIsOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMT
-MyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3
-OV19
+eyJoaXN0b3J5IjpbLTExNDY5NDg0NzMsLTE3Njg2NTY0MjgsMT
+EwNjU2NzU1OSwxMTMzNDE4ODc2LDk2MDg0ODk2OCwxNzg2NDA5
+OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUwOSwyMDcyNzczNTMsLT
+U4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMzkzODk3ODYsMTU1MjEz
+NjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2LDEyNjU2ODY4NjMsOT
+E5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMzMwNTI3LC03ODg4MzM3
+NDFdfQ==
 -->
