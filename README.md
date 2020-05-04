@@ -97,13 +97,13 @@ Cosine distance is commonly used in tasks utilizing text data because Euclidean 
 * Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
-[[12]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+[[14]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
 ## 4c In the W&B competition website, nDCG is used to rank different learning methods:
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
-#### Add picture found in AI/Assignment_3/readme_images
+#### Add picture found in AI/Assignment_3/readme_images/ndcg_diagram.png
 
 [[14]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
 
@@ -141,11 +141,11 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjMxMjIzNDMsMTEzMzQxODg3Niw5Nj
-A4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1
-MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMT
-M5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0
-NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2Mj
-MzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3
-N119
+eyJoaXN0b3J5IjpbMTEwNjU2NzU1OSwxMTMzNDE4ODc2LDk2MD
+g0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUw
+OSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMz
+kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
+LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
+MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
+XX0=
 -->
