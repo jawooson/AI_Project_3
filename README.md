@@ -54,13 +54,14 @@ _“It was the best of times” = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
 “It was the worst of times” = [1, 1, 1, 0, 1, 1, 1, 0, 0, 0]  
 “It was the age of wisdom” = [1, 1, 1, 0, 1, 0, 0, 1, 1, 0]  
 “It was the age of foolishness” = [1, 1, 1, 0, 1, 0, 0, 1, 0, 1]_
+[[example from here medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)]
 
 This is generally what Bag of Words is, it translates text data to a from that is ingestible to a neural net. 
 
 While this idea sounds very simple, there are many different methodologies in how to vectorize text data, such as dropping out low frequency words, using different metrics in the vectorized notation such as term frequency or inverse document frequency.
 
 [bow 1](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
-[bow 2](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
+[bow 2 medium bow article](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 
 
 ## 2 Neural Bag of Words
@@ -131,11 +132,11 @@ Challenge W&B Page:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzQxODg3Niw5NjA4NDg5NjgsMTc4Nj
-QwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1MDksMjA3Mjc3MzUz
-LC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMTM5Mzg5Nzg2LDE1NT
-IxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0NiwxMjY1Njg2ODYz
-LDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2MjMzMDUyNywtNzg4OD
-MzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3Nyw5Mjg1MDgwMzdd
-fQ==
+eyJoaXN0b3J5IjpbMTI1NzQ0MTIsMTEzMzQxODg3Niw5NjA4ND
+g5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1MDks
+MjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMTM5Mz
+g5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0Niwx
+MjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2MjMzMD
+UyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3N119
+
 -->
