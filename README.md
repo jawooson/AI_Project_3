@@ -91,7 +91,7 @@ The test set consists of 99 queries. For each query, we are given 1000 code snip
 ## 4b. Metrics for Test Accuracy: MRR  
 Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
-This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
+This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.
 [[13]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
@@ -135,11 +135,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NjU4NzAwMCw1ODM1NDA0NTMsLTExND
-Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
-ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
-Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
-ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOT
-YwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5
-NF19
+eyJoaXN0b3J5IjpbLTg3NjczMzM2LDU4MzU0MDQ1MywtMTE0Nj
+k0ODQ3MywtMTc2ODY1NjQyOCwxMTA2NTY3NTU5LDExMzM0MTg4
+NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4NiwxND
+QxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4
+MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5Nj
+A1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIwNDcsODIxMzIyNjk0
+XX0=
 -->
