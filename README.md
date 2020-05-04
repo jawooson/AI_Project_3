@@ -90,13 +90,6 @@ In the Neural Bag of Words Model, the code to be evaluated and the NLP query are
 
 Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[13]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
-
-[word embedding article 1](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
-[word embedding article 2](https://en.wikipedia.org/wiki/Word_embedding)
-[tensor flow word embedding](https://www.tensorflow.org/tutorials/text/word_embeddings)
-
-[cosine distance](https://www.machinelearningplus.com/nlp/cosine-similarity/)
-
 ## 4a I need to discuss what exactly is being tested.
 * Ok so testing is interesting. The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
 
@@ -104,7 +97,7 @@ Cosine distance is commonly used in tasks utilizing text data because Euclidean 
 * Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.  
-[https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
+[[12]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
 ## 4c In the W&B competition website, nDCG is used to rank different learning methods:
@@ -148,11 +141,11 @@ Online Resources cited and used:
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTYzNjUwOCwxMTMzNDE4ODc2LDk2MD
-g0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMTQ0MTU2NjUw
-OSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0ODIzNSwxMz
-kzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOTYwNTc4MTQ2
-LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5NCwxOTYyMz
-MwNTI3LC03ODg4MzM3NDEsMjAxNzAxNDc3OSwxMzMyODAzNzc3
-XX0=
+eyJoaXN0b3J5IjpbLTE5MjMxMjIzNDMsMTEzMzQxODg3Niw5Nj
+A4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1
+MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMT
+M5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0
+NiwxMjY1Njg2ODYzLDkxOTU4MjA0Nyw4MjEzMjI2OTQsMTk2Mj
+MzMDUyNywtNzg4ODMzNzQxLDIwMTcwMTQ3NzksMTMzMjgwMzc3
+N119
 -->
