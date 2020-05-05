@@ -26,6 +26,7 @@ More context regarding the motivation for this problem is in this  [technical re
 
 5. Pre-trained model results
 
+
 ## 1. Bag of Words Model
 
 * The Bag of Words (BoW) model does not do prediction. It is a feature engineering pre processing step.
@@ -101,6 +102,10 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
  Figure taken from [[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1).
 
+## 5. Pre-trained Model Results
+<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png" width=65%/></div>
+
+
 
 ## Bibliography
 
@@ -133,11 +138,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1OTY4MzMzLDE4NDQ3OTc1MywxMjQ3Nz
-UxMTEyLDU4MzU0MDQ1MywtMTE0Njk0ODQ3MywtMTc2ODY1NjQy
-OCwxMTA2NTY3NTU5LDExMzM0MTg4NzYsOTYwODQ4OTY4LDE3OD
-Y0MDk5OTksMTExNzY5MzQ4NiwxNDQxNTY2NTA5LDIwNzI3NzM1
-MywtNTg2NTMwNjcyLC0xMTc2MjQ4MjM1LDEzOTM4OTc4NiwxNT
-UyMTM2NjksMTc5MDcxMDI3Miw5NjA1NzgxNDYsMTI2NTY4Njg2
-M119
+eyJoaXN0b3J5IjpbLTQwODUyNDY3Miw1NDU5NjgzMzMsMTg0ND
+c5NzUzLDEyNDc3NTExMTIsNTgzNTQwNDUzLC0xMTQ2OTQ4NDcz
+LC0xNzY4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQxODg3Niw5Nj
+A4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1
+MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMT
+M5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0
+Nl19
 -->
