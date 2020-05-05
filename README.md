@@ -2,6 +2,10 @@
 
 This is an extension of the [CodeSearchNet](https://app.wandb.ai/github/codesearchnet/benchmark) competition. 
 
+<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/figure_3.png"/></div>
+
+[](https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/figure_3.png)
+
 
 ## A brief overview of the project
 [CodeSearchNet](https://arxiv.org/abs/1909.09436)  is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this  [blog post](https://githubengineering.com/towards-natural-language-semantic-code-search/)  and is a joint collaboration between GitHub and the  [Deep Program Understanding](https://www.microsoft.com/en-us/research/project/program/)  group at  [Microsoft Research - Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). We aim to provide a platform for community research on semantic code search via the following:
@@ -135,11 +139,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Nzc1MTExMiw1ODM1NDA0NTMsLTExND
-Y5NDg0NzMsLTE3Njg2NTY0MjgsMTEwNjU2NzU1OSwxMTMzNDE4
-ODc2LDk2MDg0ODk2OCwxNzg2NDA5OTk5LDExMTc2OTM0ODYsMT
-Q0MTU2NjUwOSwyMDcyNzczNTMsLTU4NjUzMDY3MiwtMTE3NjI0
-ODIzNSwxMzkzODk3ODYsMTU1MjEzNjY5LDE3OTA3MTAyNzIsOT
-YwNTc4MTQ2LDEyNjU2ODY4NjMsOTE5NTgyMDQ3LDgyMTMyMjY5
-NF19
+eyJoaXN0b3J5IjpbMTMxMzc3Nzc4MCwxMjQ3NzUxMTEyLDU4Mz
+U0MDQ1MywtMTE0Njk0ODQ3MywtMTc2ODY1NjQyOCwxMTA2NTY3
+NTU5LDExMzM0MTg4NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMT
+ExNzY5MzQ4NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMw
+NjcyLC0xMTc2MjQ4MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMT
+c5MDcxMDI3Miw5NjA1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIw
+NDddfQ==
 -->
