@@ -98,9 +98,9 @@ This metric used for accuracy is much better than traditional accuracy score bec
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
 #### Add picture found in AI/Assignment_3/readme_images/ndcg_diagram.png
-[[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1)
+<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png" width=65%/></div>
 
-
+ Figure taken from [[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1).
 
 
 ## Bibliography
@@ -134,11 +134,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU3OTc1MCwxMjQ3NzUxMTEyLDU4Mz
-U0MDQ1MywtMTE0Njk0ODQ3MywtMTc2ODY1NjQyOCwxMTA2NTY3
-NTU5LDExMzM0MTg4NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMT
-ExNzY5MzQ4NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMw
-NjcyLC0xMTc2MjQ4MjM1LDEzOTM4OTc4NiwxNTUyMTM2NjksMT
-c5MDcxMDI3Miw5NjA1NzgxNDYsMTI2NTY4Njg2Myw5MTk1ODIw
-NDddfQ==
+eyJoaXN0b3J5IjpbMTg0NDc5NzUzLDEyNDc3NTExMTIsNTgzNT
+QwNDUzLC0xMTQ2OTQ4NDczLC0xNzY4NjU2NDI4LDExMDY1Njc1
+NTksMTEzMzQxODg3Niw5NjA4NDg5NjgsMTc4NjQwOTk5OSwxMT
+E3NjkzNDg2LDE0NDE1NjY1MDksMjA3Mjc3MzUzLC01ODY1MzA2
+NzIsLTExNzYyNDgyMzUsMTM5Mzg5Nzg2LDE1NTIxMzY2OSwxNz
+kwNzEwMjcyLDk2MDU3ODE0NiwxMjY1Njg2ODYzLDkxOTU4MjA0
+N119
 -->
