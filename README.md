@@ -75,7 +75,7 @@ The position of a word within the vector space is learned from text and is based
 
 The position of a word in the learned vector space is referred to as its embedding.
 
-<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/figure_3.png" width=75%/></div>
+<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/figure_3.png" width=65%/></div>
 
  Figure taken from [[1]](https://arxiv.org/pdf/1909.09436.pdf)
 
@@ -134,7 +134,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTM0MDE4NywxMjQ3NzUxMTEyLDU4Mz
+eyJoaXN0b3J5IjpbLTE5OTU3OTc1MCwxMjQ3NzUxMTEyLDU4Mz
 U0MDQ1MywtMTE0Njk0ODQ3MywtMTc2ODY1NjQyOCwxMTA2NTY3
 NTU5LDExMzM0MTg4NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMT
 ExNzY5MzQ4NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMw
