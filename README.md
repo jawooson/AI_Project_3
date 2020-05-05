@@ -103,7 +103,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  Figure taken from [[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1).
 
 ## 5. Pre-trained Model Results
-<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/test_accuracies_all.png" width=65%/></div>
+<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/test_accuracies_all.png" width=100%/></div>
 
 
 ## Bibliography
@@ -137,11 +137,11 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjA3MjMxOCw1NDU5NjgzMzMsMTg0ND
-c5NzUzLDEyNDc3NTExMTIsNTgzNTQwNDUzLC0xMTQ2OTQ4NDcz
-LC0xNzY4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQxODg3Niw5Nj
-A4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1
-MDksMjA3Mjc3MzUzLC01ODY1MzA2NzIsLTExNzYyNDgyMzUsMT
-M5Mzg5Nzg2LDE1NTIxMzY2OSwxNzkwNzEwMjcyLDk2MDU3ODE0
-Nl19
+eyJoaXN0b3J5IjpbLTE0OTA0MTA2MTIsNTQ1OTY4MzMzLDE4ND
+Q3OTc1MywxMjQ3NzUxMTEyLDU4MzU0MDQ1MywtMTE0Njk0ODQ3
+MywtMTc2ODY1NjQyOCwxMTA2NTY3NTU5LDExMzM0MTg4NzYsOT
+YwODQ4OTY4LDE3ODY0MDk5OTksMTExNzY5MzQ4NiwxNDQxNTY2
+NTA5LDIwNzI3NzM1MywtNTg2NTMwNjcyLC0xMTc2MjQ4MjM1LD
+EzOTM4OTc4NiwxNTUyMTM2NjksMTc5MDcxMDI3Miw5NjA1Nzgx
+NDZdfQ==
 -->
