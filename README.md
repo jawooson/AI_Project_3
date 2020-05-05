@@ -75,9 +75,9 @@ The position of a word within the vector space is learned from text and is based
 
 The position of a word in the learned vector space is referred to as its embedding.
 
-<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/figure_3.png"/></div>
+<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/figure_3.png" width=75%/></div>
 
- Figure taken from [[1](https://arxiv.org/pdf/1909.09436.pdf)
+ Figure taken from [[1]](https://arxiv.org/pdf/1909.09436.pdf)
 
 
 In the Neural Bag of Words Model, the code to be evaluated and the NLP query are made into tokens. This is the bag of words stage in the nBoW model. After tokens are made, they are fed into a word embedder (sequence encoder). This creates vector representations, of the code and the query, in a predefined vector space (ex R^4). Finally, the distance is measured between the code and the query, which creates the ranking from closest to furthest. The default distance formula used is the cosine distance.
@@ -134,7 +134,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODk4OTcyNCwxMjQ3NzUxMTEyLDU4Mz
+eyJoaXN0b3J5IjpbMTUwOTM0MDE4NywxMjQ3NzUxMTEyLDU4Mz
 U0MDQ1MywtMTE0Njk0ODQ3MywtMTc2ODY1NjQyOCwxMTA2NTY3
 NTU5LDExMzM0MTg4NzYsOTYwODQ4OTY4LDE3ODY0MDk5OTksMT
 ExNzY5MzQ4NiwxNDQxNTY2NTA5LDIwNzI3NzM1MywtNTg2NTMw
