@@ -103,8 +103,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  Figure taken from [[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1).
 
 ## 5. Pre-trained Model Results
-<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png" width=65%/></div>
-
+<div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/test_accuracies_all.png" width=65%/></div>
 
 
 ## Bibliography
@@ -138,7 +137,7 @@ This metric used for accuracy is much better than traditional accuracy score bec
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODUyNDY3Miw1NDU5NjgzMzMsMTg0ND
+eyJoaXN0b3J5IjpbMTU0NjA3MjMxOCw1NDU5NjgzMzMsMTg0ND
 c5NzUzLDEyNDc3NTExMTIsNTgzNTQwNDUzLC0xMTQ2OTQ4NDcz
 LC0xNzY4NjU2NDI4LDExMDY1Njc1NTksMTEzMzQxODg3Niw5Nj
 A4NDg5NjgsMTc4NjQwOTk5OSwxMTE3NjkzNDg2LDE0NDE1NjY1
