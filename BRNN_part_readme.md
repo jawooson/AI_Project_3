@@ -20,6 +20,8 @@ In the use of NLP, the RNNs only takes into account the effects of the word writ
  >2. ***He said, "Teddy** Roosevelt was a great President!"* [\[2\]](https://www.coursera.org/lecture/nlp-sequence-models/bidirectional-rnn-fyXnn)
  
  In sentence 1 and 2, if we only look at the first three words ***He said, "Teddy***, we can't infer whether it's talking about a Teddy bear or the name of the president. So basic RNNs model doesn't work well regarding the language structure like this. 
+ 
+ ![RNN model with example sentence](https://github.com/jawooson/AI_Project_3/blob/rzdev/images/RNN_w_eg.png)
 
 ##### What's Bidirectional RNN?
 
@@ -27,4 +29,5 @@ A bi-directional RNN consists of a forward and a backward recurrent neural netwo
 
 i.e., in the previous ***He said, "Teddy*** example, BRNN will also look at words that appear after the first three words, and when it sees ***bears*** , it can infer that ***Teddy***  is refer to ***Teddy bears***.
 
+![BRNN model with example sentence](https://github.com/jawooson/AI_Project_3/blob/rzdev/images/BRNN_w_eg.png)
  
