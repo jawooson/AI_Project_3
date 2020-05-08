@@ -55,3 +55,8 @@ CodeSearchNet uses BRNN as one of the sequence processing techniques architectur
 The BRNN architecture takes token sequences that are preprocessed according to their semantics (identifiers appearing in code tokens are split into subtokens and )and natural language tokens are split using byte-pair encoding (BPE) as input. Then output their contextualized token embeddings. 
 
 Let's take look at  CodeSearchNet's baseline BRNN model's sequence encoder : **rnn_seq_encoder.py** and see what happens from input token sequences to contextualized token embeddings. 
+
+ ![BRNN model encoder py code](https://github.com/jawooson/AI_Project_3/blob/rzdev/images/BRNN_encoder.png)
+
+After the encoder return the BRNN's final state and token embeddings, a pooling will be implemented on the returned token embeddings. 
+
