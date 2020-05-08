@@ -22,7 +22,7 @@ CNN Self Attention is similar to attention model, with a convolutionary neural n
 
 6. Multiply scores with **values**
 
-7. Sum **weighted** **values** to get Output 1
+7. Calculate **weighted** **mean** to get Output 1
 
 8. Repeat steps 4–7 for Input 2 & Input 3
 
@@ -43,7 +43,7 @@ encoder_hypers = {
   '1dcnn_add_residual_connections': True,
   '1dcnn_activation': 'tanh',
   
-  # Attention layers, 2 layers with 8 heads, 128 hidden sizes, 512 intermediate sizes
+  # Attention layers
   'self_attention_activation': 'gelu',
   'self_attention_hidden_size': 128,
   'self_attention_intermediate_size': 512,
@@ -53,7 +53,23 @@ encoder_hypers = {
 }
 ```
 
-Activation function: GELU (Gaussian Error Linear Unit activation function )
+##### CNN layer
+
+Activation function: tanh
+
+##### Attention layer
+
+Activation function: gelu (Gaussian Error Linear Unit activation function )
+
+2 layers with 8 heads
+
+128 hidden sizes
+
+512 intermediate sizes
+
+| tanh                                                 | Self Attn                                              |
+| ---------------------------------------------------- | ------------------------------------------------------ |
+| <img src="image/3.png" alt="3" style="zoom:150%;" /> | <img src="image/gelu.png" alt="3" style="zoom:50%;" /> |
 
 
 
