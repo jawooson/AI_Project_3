@@ -69,7 +69,7 @@ Activation function: gelu (Gaussian Error Linear Unit activation function )
 
 | tanh                                          | Self Attn                                        |
 | --------------------------------------------- | ------------------------------------------------ |
-| <img src="image/3.png" alt="3" width="350" /> | <img src="image/gelu.png" alt="3" width="350" /> |
+| <img src="image/3.png" alt="3" width="400" /> | <img src="image/gelu.png" alt="3" width="400" /> |
 
 
 
