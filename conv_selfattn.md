@@ -67,9 +67,9 @@ Activation function: gelu (Gaussian Error Linear Unit activation function )
 
 512 intermediate sizes
 
-| tanh                                                 | Self Attn                                              |
-| ---------------------------------------------------- | ------------------------------------------------------ |
-| <img src="image/3.png" alt="3" style="zoom:150%;" /> | <img src="image/gelu.png" alt="3" style="zoom:50%;" /> |
+| tanh                                          | Self Attn                                        |
+| --------------------------------------------- | ------------------------------------------------ |
+| <img src="image/3.png" alt="3" width="350" /> | <img src="image/gelu.png" alt="3" width="350" /> |
 
 
 
