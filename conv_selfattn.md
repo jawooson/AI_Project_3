@@ -8,8 +8,20 @@ CNN Self Attention is similar to attention model, with a convolutionary neural n
 
 
 
+## 2. Example
 
-## 2. Model explain
+Say ”The animal didn't cross the street because **it** was too tired”
+
+What does “it” in this sentence refer to? Is it referring to the street or to the animal? It’s a simple question to a human, but not as simple to an algorithm.
+
+When the model is processing the word “it”, self-attention allows it to associate “it” with “animal”.
+
+As the model processes each word (each position in the input sequence), self attention allows it to look at other positions in the input sequence for clues that can help lead to a better encoding for this word.
+
+<img src="image/example.png" alt="3" width="400" />
+
+
+## 3. Model explain
 1. Prepare inputs
 
 2. Initialise weights
@@ -79,7 +91,69 @@ The encoder in the proposed Transformer model has multiple “encoder self atten
 
 1. The input will be the word embeddings for the first layer. For subsequent layers, it will be the output of previous layer.
 2. Inside each layer, first the multi-head self attention is computed using the inputs for the layer as keys, queries and values.
-3. The output of #2 is sent to a feed-forward network layer. Here every position (i.e. every word representation) is fed through the same feed-forward that contains two linear transformations followed by a ReLU (input vector ->linear transformed hidden1->linear transformed hidden2 ->ReLU output).
+3. The output of #2 is sent to a feed-forward network layer. Here every position (i.e. every word representation) is fed through the same feed-forward that contains two linear transformations followed by a GeLU (input vector ->linear transformed hidden1->linear transformed hidden2 ->GeLU output).
+
+```python
+def make_model(self, is_train: bool = False) -> tf.Tensor:
+        with tf.variable_scope("self_attention_encoder"):
+            self._make_placeholders()
+						
+          	# Step 1
+            seq_tokens_embeddings = self.embedding_layer(self.placeholders['tokens'])
+
+            activation_fun = get_activation(self.get_hyper('1dcnn_activation'))
+            current_embeddings = seq_tokens_embeddings
+            num_filters_and_width = zip(
+              												self.get_hyper('1dcnn_layer_list'),
+              												self.get_hyper('1dcnn_kernel_width'))
+            
+            # Step 2
+            for (layer_idx,(num_filters, kernel_width)) in enumerate(num_filters_and_width):
+                next_embeddings = tf.layers.conv1d(
+                    inputs=current_embeddings,
+                    filters=num_filters,
+                    kernel_size=kernel_width,
+                    padding="same")
+
+                # Add residual connections past the first layer.
+                if self.get_hyper('1dcnn_add_residual_connections') and layer_idx > 0:
+                    next_embeddings += current_embeddings
+
+                current_embeddings = activation_fun(next_embeddings)
+
+                current_embeddings = tf.nn.dropout(
+                  											current_embeddings,
+                                       	keep_prob=self.placeholders['dropout_keep_rate'])
+						# Step 3
+            config = BertConfig(
+              vocab_size=self.get_hyper('token_vocab_size'),
+              hidden_size=self.get_hyper('self_attention_hidden_size'),
+              num_hidden_layers=self.get_hyper('self_attention_num_layers'),
+              num_attention_heads=self.get_hyper('self_attention_num_heads'),
+              intermediate_size=self.get_hyper('self_attention_intermediate_size'))
+
+            model = BertModel(config=config,
+            	is_training=is_train,
+              input_ids=self.placeholders['tokens'],
+              input_mask=self.placeholders['tokens_mask'],
+              use_one_hot_embeddings=False,
+              embedded_input=current_embeddings)
+
+            output_pool_mode = self.get_hyper('self_attention_pool_mode').lower()
+            if output_pool_mode == 'bert':
+                return model.get_pooled_output()
+            else:
+                seq_token_embeddings = model.get_sequence_output()
+                seq_token_masks = self.placeholders['tokens_mask']
+                seq_token_lengths = tf.reduce_sum(seq_token_masks, axis=1)
+                return pool_sequence_embedding(
+                  			output_pool_mode,
+                       	sequence_token_embeddings=seq_token_embeddings,
+                  			sequence_lengths=seq_token_lengths,
+                  			sequence_token_masks=seq_token_masks)
+```
+
+
 
 **Decoder**
 
@@ -90,7 +164,7 @@ The decoder will also have multiple layers. Each layer is constructed as follows
 3. The output of #2 is sent to a “multi-head-encoder-decoder-attention” layer. Here yet another attention is computed using #2 outputs as queries and encoder outputs as keys and values.
 4. The output of #3 is sent to a position wise feed-forward network layer like in encoder.
 
-## 3. Metrics  
+## 4. Metrics  
 
 | (bs=1,000)              | Self Attn | CNN Self Attn |
 | ----------------------- | --------- | ------------- |
