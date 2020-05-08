@@ -26,11 +26,11 @@ CNN Self Attention is similar to attention model, with a convolutionary neural n
 
 8. Repeat steps 4–7 for Input 2 & Input 3
 
-   ![image-20200508190210159](/Users/lynnli/Library/Application Support/typora-user-images/image-20200508190210159.png)
+   ![image-20200508190210159](image/1.png)
 
    
 
-   ![image-20200508145035167](/Users/lynnli/Library/Application Support/typora-user-images/image-20200508145035167.png)
+   ![image-20200508145035167](image/2.png)
 
    
 
@@ -70,22 +70,11 @@ The encoder in the proposed Transformer model has multiple “encoder self atten
 The decoder will also have multiple layers. Each layer is constructed as follows:
 
 1. The input will be the word embeddings generated so far for the first layer. For subsequent layers, it will be the output of previous layer.
-
 2. Inside each layer, first the multi-head self attention is computed using the inputs for the layer as keys, queries and values (i.e. generated decoder outputs so far, padded for rest of positions).
-
 3. The output of #2 is sent to a “multi-head-encoder-decoder-attention” layer. Here yet another attention is computed using #2 outputs as queries and encoder outputs as keys and values.
-
 4. The output of #3 is sent to a position wise feed-forward network layer like in encoder.
 
-   
-
-## 3. Train / improve existing model
-
-I changed the batch size of CNN Self Attn to 360
-
-
-
-## 4. Metrics  
+## 3. Metrics  
 
 | (bs=1,000)              | Self Attn | CNN Self Attn |
 | ----------------------- | --------- | ------------- |
@@ -104,5 +93,5 @@ I changed the batch size of CNN Self Attn to 360
 
 <a href="https://jalammar.github.io/illustrated-transformer/">Illustrated transformer</a>
 
-<a href="https://openreview.net/pdf?id=HJlnC1rKPB">ON THE RELATIONSHIP BETWEEN SELF-ATTENTION AND CONVOLUTIONAL LAYERS</a>
+<a href="https://openreview.net/pdf?id=HJlnC1rKPB">On the relationship between self-attention and convolutional layers</a>
 
