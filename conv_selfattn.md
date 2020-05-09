@@ -102,7 +102,7 @@ def make_self_attention_encoder:
             # Step 2/3
             for every layer:
                 compute self-attention layer based on inputs
-								Add residual connections past the first layer
+                Add residual connections past the first layer
                 GELU activate/ dropout
                 
 						# Return encoder with configured pool mode
