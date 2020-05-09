@@ -94,66 +94,21 @@ The encoder in the proposed Transformer model has multiple “encoder self atten
 3. The output of #2 is sent to a feed-forward network layer. Here every position (i.e. every word representation) is fed through the same feed-forward that contains two linear transformations followed by a GeLU (input vector ->linear transformed hidden1->linear transformed hidden2 ->GeLU output).
 
 ```python
-def make_model(self, is_train: bool = False) -> tf.Tensor:
-        with tf.variable_scope("self_attention_encoder"):
-            self._make_placeholders()
-						
+def make_self_attention_encoder:
+		
           	# Step 1
-            seq_tokens_embeddings = self.embedding_layer(self.placeholders['tokens'])
-
-            activation_fun = get_activation(self.get_hyper('1dcnn_activation'))
-            current_embeddings = seq_tokens_embeddings
-            num_filters_and_width = zip(
-              												self.get_hyper('1dcnn_layer_list'),
-              												self.get_hyper('1dcnn_kernel_width'))
+            embbed_layer(tokens)
             
-            # Step 2
-            for (layer_idx,(num_filters, kernel_width)) in enumerate(num_filters_and_width):
-                next_embeddings = tf.layers.conv1d(
-                    inputs=current_embeddings,
-                    filters=num_filters,
-                    kernel_size=kernel_width,
-                    padding="same")
-
-                # Add residual connections past the first layer.
-                if self.get_hyper('1dcnn_add_residual_connections') and layer_idx > 0:
-                    next_embeddings += current_embeddings
-
-                current_embeddings = activation_fun(next_embeddings)
-
-                current_embeddings = tf.nn.dropout(
-                  											current_embeddings,
-                                       	keep_prob=self.placeholders['dropout_keep_rate'])
-						# Step 3
-            config = BertConfig(
-              vocab_size=self.get_hyper('token_vocab_size'),
-              hidden_size=self.get_hyper('self_attention_hidden_size'),
-              num_hidden_layers=self.get_hyper('self_attention_num_layers'),
-              num_attention_heads=self.get_hyper('self_attention_num_heads'),
-              intermediate_size=self.get_hyper('self_attention_intermediate_size'))
-
-            model = BertModel(config=config,
-            	is_training=is_train,
-              input_ids=self.placeholders['tokens'],
-              input_mask=self.placeholders['tokens_mask'],
-              use_one_hot_embeddings=False,
-              embedded_input=current_embeddings)
-
-            output_pool_mode = self.get_hyper('self_attention_pool_mode').lower()
-            if output_pool_mode == 'bert':
-                return model.get_pooled_output()
-            else:
-                seq_token_embeddings = model.get_sequence_output()
-                seq_token_masks = self.placeholders['tokens_mask']
-                seq_token_lengths = tf.reduce_sum(seq_token_masks, axis=1)
-                return pool_sequence_embedding(
-                  			output_pool_mode,
-                       	sequence_token_embeddings=seq_token_embeddings,
-                  			sequence_lengths=seq_token_lengths,
-                  			sequence_token_masks=seq_token_masks)
+            # Step 2/3
+            for every layer:
+                compute self-attention layer based on inputs
+								Add residual connections past the first layer
+                GELU activate/ dropout
+                
+						# Return encoder with configured pool mode
 ```
 
-
+Input: tokens, Output: self-attention encoder
 
 **Decoder**
 
