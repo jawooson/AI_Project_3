@@ -10,7 +10,7 @@ CNN Self Attention is similar to attention model, with a convolutionary neural n
 
 ## 2. Example
 
-Say ”The panda couldn't reach the milk on the table because **it** is tiny. ”
+Say ”The baby panda couldn't reach the milk on the table because **it** is tiny. ”
 
 What does “it” in this sentence refer to? Is it referring to the panda or to the milk? As intuitive as it sounds to human, it is a tricky question to the machine.
 
