@@ -20,15 +20,15 @@ As the model processes each word in the sequence, self-attention differentiate i
 
 
 ## 3. Model explain
-1. Prepare inputs
+1. Preprocessing inputs
 
-2. Initialise weights
+2. Initialize weights
 
 3. Derive **key**, **query** and **value**
 
-4. Calculate attention scores for Input 1
+4. Compute attention scores for Input 1
 
-5. Calculate softmax
+5. Compute softmax
 
 6. Multiply scores with **values**
 
