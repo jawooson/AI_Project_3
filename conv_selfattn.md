@@ -10,15 +10,13 @@ CNN Self Attention is similar to attention model, with a convolutionary neural n
 
 ## 2. Example
 
-Say ”The animal didn't cross the street because **it** was too tired”
+Say ”The panda couldn't reach the milk on the table because **it** is tiny. ”
 
-What does “it” in this sentence refer to? Is it referring to the street or to the animal? It’s a simple question to a human, but not as simple to an algorithm.
+What does “it” in this sentence refer to? Is it referring to the panda or to the milk? As intuitive as it sounds to human, it is a tricky question to the machine.
 
-When the model is processing the word “it”, self-attention allows it to associate “it” with “animal”.
+As the model processes each word in the sequence, self-attention differentiate itself from other machine learning models by allowing the model to link “it” with “panda”. It computes other positions in the input sequence for clues to build a better encoding for this word.
 
-As the model processes each word (each position in the input sequence), self attention allows it to look at other positions in the input sequence for clues that can help lead to a better encoding for this word.
-
-<img src="image/example.png" alt="3" width="400" />
+<img src="image/example2.png" height="400"/>
 
 
 ## 3. Model explain
@@ -121,12 +119,13 @@ The decoder will also have multiple layers. Each layer is constructed as follows
 
 ## 4. Metrics  
 
-| (bs=1,000)              | Self Attn | CNN Self Attn |
-| ----------------------- | --------- | ------------- |
-| Test-python MRR         | 0.692     | 0.632         |
-| FuncNameTest-python MRR | 0.680     | 0.595         |
-| Validation-python MRR   | 0.643     | 0.583         |
+| (bs=1,000)              | EXPV  | 1DCNN | BOW   | Self Attention | CNN Self Attention | BRNN  |
+| ----------------------- | ----- | ----- | ----- | -------------- | ------------------ | ----- |
+| Test-python MRR         | 0.572 | 0.579 | 0.586 | 0.692          | 0.632              | 0.638 |
+| FuncNameTest-python MRR | 0.469 | 0.577 | 0.48  | 0.68           | 0.595              | 0.644 |
+| Validation-python MRR   | 0.542 | 0.529 | 0.559 | 0.643          | 0.583              | 0.588 |
 
+![img](image/comp.png)
 
 ## Bibliography
 
