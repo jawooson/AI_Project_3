@@ -184,8 +184,9 @@ As the model processes each word in the sequence, self-attention differentiate i
 8. Repeat steps 4–7 for Input 2 & Input 3
 
 ![image-20200508190210159](https://github.com/jawooson/AI_Project_3/blob/lldev/image/1.png)
+Figure taken from [[17]]
 ![image-20200508145035167](https://github.com/jawooson/AI_Project_3/blob/lldev/image/2.png)
-
+Figure taken from [[17]]
 ```python
 encoder_hypers = {
   # CNN layers
@@ -318,14 +319,12 @@ Overall Self Attention model has the best MRR score.
 [13] [MRR vs MAP vs NDCG: Rank-Aware Evaluation Metrics And When To Use Them](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)    
 [14] [Natural Language Processing: From Basics to using RNN and LSTM](https://towardsdatascience.com/natural-language-processing-from-basics-to-using-rnn-and-lstm-ef6779e4ae66)  
 [15]  [Bidirectional RNN Online Course Taught by Andrew Ng](https://www.coursera.org/lecture/nlp-sequence-models/bidirectional-rnn-fyXnn)  
-[16] [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](https://arxiv.org/abs/1412.3555)
-[17] [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)
-[18] [Illustrated: Self-Attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a)
-[19] [Attn: Illustrated Attention](https://towardsdatascience.com/attn-illustrated-attention-5ec4ad276ee3)
-[20] [Illustrated transformer](https://jalammar.github.io/illustrated-transformer/)
-[21] [On the relationship between self-attention and convolutional layers](https://openreview.net/pdf?id=HJlnC1rKPB)
-
- 
+[16] [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](https://arxiv.org/abs/1412.3555)  
+[17] [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)  
+[18] [Illustrated: Self-Attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a)  
+[19] [Attn: Illustrated Attention](https://towardsdatascience.com/attn-illustrated-attention-5ec4ad276ee3)  
+[20] [Illustrated transformer](https://jalammar.github.io/illustrated-transformer/)  
+[21] [On the relationship between self-attention and convolutional layers](https://openreview.net/pdf?id=HJlnC1rKPB)  
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE0OTA0MTA2MTIsNTQ1OTY4MzMzLDE4ND
