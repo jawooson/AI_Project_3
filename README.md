@@ -191,7 +191,7 @@ Figure taken from [[17]]
 encoder_hypers = {
   # CNN layers
   '1dcnn_position_encoding': 'none',
-	'1dcnn_layer_list': [128, 128],
+  '1dcnn_layer_list': [128, 128],
   '1dcnn_kernel_width': [8, 8], 
   '1dcnn_add_residual_connections': True,
   '1dcnn_activation': 'tanh',
@@ -221,7 +221,7 @@ Activation function: gelu (Gaussian Error Linear Unit activation function )
 
 
 
-| tanh                                          | Self Attn                                        |
+| tanh                                          | GELU                                        |
 | --------------------------------------------- | ------------------------------------------------ |
 | <img src="https://github.com/jawooson/AI_Project_3/blob/lldev/image/3.png" alt="3" width="400" /> | <img src="https://github.com/jawooson/AI_Project_3/blob/lldev/image/gelu.png" alt="3" width="400" /> |
 
@@ -283,16 +283,16 @@ This metric used for accuracy is much better than traditional accuracy score bec
 
 | (bs=1,000)              | EXPV  | 1DCNN | BOW   | Self Attention | CNN Self Attention | BRNN  |
 | ----------------------- | ----- | ----- | ----- | -------------- | ------------------ | ----- |
-| Test-python MRR         | 0.572 | 0.579 | 0.586 | 0.692          | 0.632              | 0.638 |
-| FuncNameTest-python MRR | 0.469 | 0.577 | 0.48  | 0.68           | 0.595              | 0.644 |
-| Validation-python MRR   | 0.542 | 0.529 | 0.559 | 0.643          | 0.583              | 0.588 |
+| Test-python MRR         | 0.572 | 0.579 | 0.586 | **0.692**          | 0.632              | 0.638 |
+| FuncNameTest-python MRR | 0.469 | 0.577 | 0.48  | **0.68**           | 0.595              | 0.644 |
+| Validation-python MRR   | 0.542 | 0.529 | 0.559 | **0.643**          | 0.583              | 0.588 |
 
 ![img](https://github.com/jawooson/AI_Project_3/blob/lldev/image/comp.png)
 
 ## Bibliography
 
 ## 6. Conclusion
-Overall Self Attention model has the best MRR score.
+Overall all the models in the baseline perform pretty similarly with MRR score ranging between 0.47-~0.69. Even though there's definitely room for improvement, running a model can take multiple hours even overnight. Self Attention has the overall highest MRR score in all three categories (Test/ FuncNameTest/ Validation). BOW has the lowest MRR score out of three models we discussed across all three categories.
 
 **Research Papers Referenced and Used:**  
 [1] [CodeSearchNet Challenge Evaluating the State of Semantic Code Search](https://arxiv.org/pdf/1909.09436.pdf) 
