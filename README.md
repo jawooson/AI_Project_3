@@ -15,20 +15,26 @@ We hope that CodeSearchNet is a step towards engaging with the broader machine l
 More context regarding the motivation for this problem is in this  [technical report](https://arxiv.org/abs/1909.09436).
 
 ## Structure of Documentation
-1. Bag of Words Model
-2. Neural Bag of Words
-3. CodeSearchNet Baseline Model: Neural Bag of Words
-
-4. Testing  
+1. Neural Bag of Words Model  
+	a. Bag of Words Model  
+	b. Neural Bag of Words  
+	c. CodeSearchNet Baseline Model: Neural Bag of Words  
+	
+2. Bidirectional RNNs model  
+ 	a. Basic RNNs model  
+	b. Bidirectional RNNs model  
+	c. Gated Recurrent Unit  
+	d. CodeSearchNet Baseline Model: Bidirectional RNN model (with GRU)  
+	
+3. Testing  
 	a. How does CodeSearchNet Implement Testing?  
 	b. Metrics for Test Accuracy: MRR  
 	c. Metrics for Test Accuracy: nDCG  
 
-5. Pre-trained model results
+4. Pre-trained model results
 
-
-## 1. Bag of Words Model
-
+## 1. Neural Bag of Words Model
+### 1a. Bag of Words Model
 * The Bag of Words (BoW) model does not do prediction. It is a feature engineering pre processing step.
 * The purpose of BoW is to represent text data in a way that machine learning/AI algorithms can use. So, in the case for Neural Nets, BoW is meant to vectorize text data into a way that can be inputted as the input layer of a neural network. 
 * The difficult part is knowing which deep learning model to use with this text data. Also, there are many ways to vectorize text data. 
@@ -61,11 +67,11 @@ This is generally what Bag of Words is, it translates text data to a from that i
 While this idea sounds very simple, there are many different methodologies in how to vectorize text data, such as dropping out low frequency words, using different metrics in the vectorized notation such as term frequency or inverse document frequency.
 
 
-## 2. Neural Bag of Words
+### 1b. Neural Bag of Words
 The NBOW model takes an average of the word vectors in the input text and performs classification with a logistic regression layer. Essentially the NBOW model is a fully connected feed forward network with BOW input. [[2]](https://www.aclweb.org/anthology/W16-1626.pdf)
 
 
-## 3. CodeSearchNet Baseline Model: Neural Bag of Words
+### 1c. CodeSearchNet Baseline Model: Neural Bag of Words
 The Neural Bag of Words baseline model used by CodeSearchNet is interesting because it only uses Bag of Words to create tokens and then those tokens are fed into a learnable embedding to create the vector representation. 
 
 Word embedding differs from bag of words. Bag of words suffers from high dimensionality and sparsity. The total number of unique words comprising the vocabulary can be huge, and given any particular document, its vector representation can be mostly zeros. This is not good for neural networks, so word embedding is a different technique that aims to reduce the dimensionality of a words representation. 
@@ -85,24 +91,86 @@ In the Neural Bag of Words Model, the code to be evaluated and the NLP query are
 
 Cosine distance is commonly used in tasks utilizing text data because Euclidean distance can be skewed based on document sizes. Cosine distance is a more appropriate measurement because the angle of vectors is measured, which makes it a more robust distance measurement. [[12]](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
-## 4a. How does CodeSearchNet Implement Testing?  
+## 2. Bidirectional RNNs model
+### 2a. Basic RNN model
+The idea behind RNNs is to make use of sequential information. Different from other neural network which assumes all inputs and outputs are independent, RNNs perform the same task for every element of a sequence, with the output being depended on the previous computations. It implements the same function *theta* across the sequence 1 :t. 
+
+> ht = f(h(t-1), xt; *theta*) (From class slide)
+
+For example, in NLP tasks, a RNN model treats each word of a sentence as a separate input occurring at time *t* and uses the activation value at *t-1* also, as an input in addition to the input at time *t*.
+
+### 2b. Bidirectional RNN model
+
+##### Why Bidirectional RNN?
+
+In the RNNs model described above, the NN is forward, which means the architectures effects of occurrences at only the previous time stamps can be taken into account.
+In the use of NLP, the RNNs only takes into account the effects of the word written only before the current word. 
+
+  Example: 
+ >1. ***He said, "Teddy** bears are on sale!"*
+ >2. ***He said, "Teddy** Roosevelt was a great President!"* [\[15\]](https://www.coursera.org/lecture/nlp-sequence-models/bidirectional-rnn-fyXnn)
+ 
+ In sentence 1 and 2, if we only look at the first three words ***He said, "Teddy***, we can't infer whether it's talking about a Teddy bear or the name of the president. So basic RNNs model doesn't work well regarding the language structure like this. 
+ 
+ ![RNN model with example sentence](https://github.com/jawooson/AI_Project_3/blob/rzdev/images/RNN_w_eg.png)
+
+##### What's Bidirectional RNN?
+
+A bi-directional RNN consists of a forward and a backward recurrent neural network and final prediction is made combining the results of both the networks at any given time t. [\[14\]](https://towardsdatascience.com/natural-language-processing-from-basics-to-using-rnn-and-lstm-ef6779e4ae66)
+
+Instead of running an RNN only in the forward mode starting from the first symbol, BRNN starts another one from the last symbol running from back to front by adding a hidden layer that passes information in a backward direction to more flexibly process such information.
+
+i.e., in the previous ***He said, "Teddy*** example, BRNN will also look at words that appear after the first three words, and when it sees ***bears*** , it can infer that ***Teddy***  is refer to ***Teddy bears***.
+
+![BRNN model with example sentence](https://github.com/jawooson/AI_Project_3/blob/rzdev/images/BRNN_w_eg.png)
+
+### 2c. Gated Recurrent Unit
+
+Another extension of basic RNNs used in the CodeSearchNet's baseline model is Gated Recurrent Unit (GRU). The difference between GRU and simple RNN block is that the GRU consists of an additional memory unit (commonly referred as an update gate or reset gate).
+
+Besides the simple RNN unit with sigmoid function and a softmax for output, GRU has an additional unit with tanh as an activation function. The output from this unit is then combined with the activation input to update the value of the memory cell.[\[16\]](https://arxiv.org/abs/1412.3555)
+
+Thus at each step value of both the hidden unit and the memory unit are updated. The value in the memory unit, plays a role in deciding the value of activation being passed on to the next unit.
+
+  Example: 
+ >*The **cat**, which already ate ...., **was** full.* [\[15\]](https://www.coursera.org/lecture/nlp-sequence-models/gated-recurrent-unit-gru-agZiL)
+
+As it reads the above sentence from left to right, the GRU unit is going to have a new var called $C$, which stands for memory cell and it will provide a bit of memory to remember whether ***cat*** is singular or plural, so when it gets further into the sentence (when reaches the word ***was***) it can still work under consideration whether the subject of the sentence was singular or plural.
+
+### 2d. CodeSearchNet Baseline Model: Bidirectional RNN model (with GRU)
+
+CodeSearchNet uses BRNN as one of the sequence processing techniques architecture. It employs one encoder per input (natural or programming) language and trains them to map inputs into a single, joint vector space. 
+
+>The objective is to map code and the corresponding language onto vectors that are near to each other, as we can then implement a search method by embedding the query and then returning the set of code snippets that are “near” in embedding space. [\[1\]](https://arxiv.org/pdf/1909.09436.pdf)
+
+The BRNN architecture takes token sequences that are preprocessed according to their semantics (identifiers appearing in code tokens are split into subtokens and )and natural language tokens are split using byte-pair encoding (BPE) as input. Then output their contextualized token embeddings. 
+
+Let's take look at  CodeSearchNet's baseline BRNN model's sequence encoder : **rnn_seq_encoder.py** and see what happens from input token sequences to contextualized token embeddings. 
+
+ ![BRNN model encoder py code](https://github.com/jawooson/AI_Project_3/blob/rzdev/images/BRNN_encoder.png)
+
+After the encoder return the BRNN's final state and token embeddings, a pooling will be implemented on the returned token embeddings. 
+
+
+## 3. Testing
+### 3a. How does CodeSearchNet Implement Testing?  
 The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
 
-## 4b. Metrics for Test Accuracy: MRR  
+### 3b. Metrics for Test Accuracy: MRR  
 Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.
 [[13]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
-## 4c. Metrics for Test Accuracy: nDCG
+### 3c. Metrics for Test Accuracy: nDCG
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
 <div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png" width=65%/></div>
 
  Figure taken from [[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1).
 
-## 5. Pre-trained Model Results
+## 4. Pre-trained Model Results
 <div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/test_accuracies_all.png" width=100%/></div>
 
 
@@ -130,7 +198,10 @@ This metric used for accuracy is much better than traditional accuracy score bec
 [10] [Wikipedia: Word embedding](https://en.wikipedia.org/wiki/Word_embedding)  
 [11] [Tensorflow Documentation: Word embeddings](https://www.tensorflow.org/tutorials/text/word_embeddings)  
 [12] [Cosine Similarity – Understanding the math and how it works (with python codes)](https://www.machinelearningplus.com/nlp/cosine-similarity/)  
-[13] [MRR vs MAP vs NDCG: Rank-Aware Evaluation Metrics And When To Use Them](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)  
+[13] [MRR vs MAP vs NDCG: Rank-Aware Evaluation Metrics And When To Use Them](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)    
+[14] [Natural Language Processing: From Basics to using RNN and LSTM](https://towardsdatascience.com/natural-language-processing-from-basics-to-using-rnn-and-lstm-ef6779e4ae66)  
+[15]  [Bidirectional RNN Online Course Taught by Andrew Ng](https://www.coursera.org/lecture/nlp-sequence-models/bidirectional-rnn-fyXnn)  
+[16] [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](https://arxiv.org/abs/1412.3555)
 
 
 
