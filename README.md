@@ -163,7 +163,7 @@ Say ”The baby panda couldn't reach the milk on the table because **it** is tin
 What does “it” in this sentence refer to? Is it referring to the panda or to the milk? As intuitive as it sounds to human, it is a tricky question to the machine.
 
 As the model processes each word in the sequence, self-attention differentiate itself from other machine learning models by allowing the model to link “it” with “panda”. It computes other positions in the input sequence for clues to build a better encoding for this word.
-<img src="image/example2.png" height="400"/>
+<img src="https://github.com/jawooson/AI_Project_3/blob/lldev/image/example2.png" height="400"/>
 
 ### 3c. Model explain
 1. Preprocessing inputs
@@ -182,8 +182,8 @@ As the model processes each word in the sequence, self-attention differentiate i
 
 8. Repeat steps 4–7 for Input 2 & Input 3
 
-![image-20200508190210159](image/1.png)
-![image-20200508145035167](image/2.png)
+![image-20200508190210159](https://github.com/jawooson/AI_Project_3/blob/lldev/image/1.png)
+![image-20200508145035167](https://github.com/jawooson/AI_Project_3/blob/lldev/image/2.png)
 
 ```python
 encoder_hypers = {
@@ -221,7 +221,7 @@ Activation function: gelu (Gaussian Error Linear Unit activation function )
 
 | tanh                                          | Self Attn                                        |
 | --------------------------------------------- | ------------------------------------------------ |
-| <img src="image/3.png" alt="3" width="400" /> | <img src="image/gelu.png" alt="3" width="400" /> |
+| <img src="https://github.com/jawooson/AI_Project_3/blob/lldev/image/3.png" alt="3" width="400" /> | <img src="https://github.com/jawooson/AI_Project_3/blob/lldev/image/gelu.png" alt="3" width="400" /> |
 
 
 
@@ -231,8 +231,6 @@ The encoder in the proposed Transformer model has multiple “encoder self atten
 1. The input will be the word embeddings for the first layer. For subsequent layers, it will be the output of previous layer.
 2. Inside each layer, first the multi-head self attention is computed using the inputs for the layer as keys, queries and values.
 3. The output of #2 is sent to a feed-forward network layer. Here every position (i.e. every word representation) is fed through the same feed-forward that contains two linear transformations followed by a GeLU (input vector ->linear transformed hidden1->linear transformed hidden2 ->GeLU output).
-
-1. 
 
 ```python
 def make_self_attention_encoder:
