@@ -151,26 +151,134 @@ Let's take look at  CodeSearchNet's baseline BRNN model's sequence encoder : **r
 
 After the encoder return the BRNN's final state and token embeddings, a pooling will be implemented on the returned token embeddings. 
 
+## 3. Self Attention & CNN Self Attention
+### 3a. Introduction
+An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors. It takes in *n* inputs, and returns *n* outputs. It allows the inputs to interact with each other (“self”) and find out who they should pay more attention to (“attention”). The outputs are aggregates of these interactions and attention scores, computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key.
 
-## 3. Testing
-### 3a. How does CodeSearchNet Implement Testing?  
+CNN Self Attention is similar to attention model, with a convolutionary neural network as additional layers at the begining.
+
+### 3b. Example
+Say ”The baby panda couldn't reach the milk on the table because **it** is tiny. ”
+
+What does “it” in this sentence refer to? Is it referring to the panda or to the milk? As intuitive as it sounds to human, it is a tricky question to the machine.
+
+As the model processes each word in the sequence, self-attention differentiate itself from other machine learning models by allowing the model to link “it” with “panda”. It computes other positions in the input sequence for clues to build a better encoding for this word.
+<img src="image/example2.png" height="400"/>
+
+### 3c. Model explain
+1. Preprocessing inputs
+
+2. Initialize weights
+
+3. Derive **key**, **query** and **value**
+
+4. Compute attention scores for Input 1
+
+5. Compute softmax
+
+6. Multiply scores with **values**
+
+7. Calculate **weighted** **mean** to get Output 1
+
+8. Repeat steps 4–7 for Input 2 & Input 3
+
+![image-20200508190210159](image/1.png)
+![image-20200508145035167](image/2.png)
+
+```python
+encoder_hypers = {
+  # CNN layers
+  '1dcnn_position_encoding': 'none',
+	'1dcnn_layer_list': [128, 128],
+  '1dcnn_kernel_width': [8, 8], 
+  '1dcnn_add_residual_connections': True,
+  '1dcnn_activation': 'tanh',
+  
+  # Attention layers
+  'self_attention_activation': 'gelu',
+  'self_attention_hidden_size': 128,
+  'self_attention_intermediate_size': 512,
+  'self_attention_num_layers': 2,
+  'self_attention_num_heads': 8,
+  'self_attention_pool_mode': 'weighted_mean',
+}
+```
+##### CNN layer
+
+Activation function: tanh
+
+##### Attention layer
+
+Activation function: gelu (Gaussian Error Linear Unit activation function )
+
+2 layers with 8 heads
+
+128 hidden sizes
+
+512 intermediate sizes
+
+
+
+| tanh                                          | Self Attn                                        |
+| --------------------------------------------- | ------------------------------------------------ |
+| <img src="image/3.png" alt="3" width="400" /> | <img src="image/gelu.png" alt="3" width="400" /> |
+
+
+
+**Encoder**
+The encoder in the proposed Transformer model has multiple “encoder self attention” layers. Each layer is constructed as follows:
+
+1. The input will be the word embeddings for the first layer. For subsequent layers, it will be the output of previous layer.
+2. Inside each layer, first the multi-head self attention is computed using the inputs for the layer as keys, queries and values.
+3. The output of #2 is sent to a feed-forward network layer. Here every position (i.e. every word representation) is fed through the same feed-forward that contains two linear transformations followed by a GeLU (input vector ->linear transformed hidden1->linear transformed hidden2 ->GeLU output).
+
+1. 
+
+```python
+def make_self_attention_encoder:
+		
+          	# Step 1
+            embbed_layer(tokens)
+            
+            # Step 2/3
+            for every layer:
+                compute self-attention layer based on inputs
+                Add residual connections past the first layer
+                GELU activate/ dropout
+                
+						# Return encoder with configured pool mode
+```
+
+Input: tokens, Output: self-attention encoder
+
+**Decoder**
+
+The decoder will also have multiple layers. Each layer is constructed as follows:
+
+1. The input will be the word embeddings generated so far for the first layer. For subsequent layers, it will be the output of previous layer.
+2. Inside each layer, first the multi-head self attention is computed using the inputs for the layer as keys, queries and values (i.e. generated decoder outputs so far, padded for rest of positions).
+3. The output of #2 is sent to a “multi-head-encoder-decoder-attention” layer. Here yet another attention is computed using #2 outputs as queries and encoder outputs as keys and values.
+4. The output of #3 is sent to a position wise feed-forward network layer like in encoder.
+
+## 4. Testing
+### 4a. How does CodeSearchNet Implement Testing?  
 The test set consists of 99 queries. For each query, we are given 1000 code snippets. Of the 1000 code snippets, only one is relevant and 999 are distractors, so the evaluation task is to rank them.  [[1]](https://arxiv.org/pdf/1909.09436.pdf) 
 
-### 3b. Metrics for Test Accuracy: MRR  
+### 4b. Metrics for Test Accuracy: MRR  
 Mean Reciprocal Rank is very simple. It measures where the first relevant term is. So, given CodeSearchNet, it measures where the one relevant code snippet is positioned relative to the other 999. Given its absolute rank, find the reciprocal. For example, if for one query the model positions in the 6th slot, it is computer as 1/6. Given that we have 99 different queries, MRR just takes the mean of all these reciprocal ranks. Again, for example if there are 3 queries with the first reciprocal rank given above and the other two are 1/8 and 1, the MRR is 1/3*(1/6 + 1/8 + 1). 
 
 This metric used for accuracy is much better than traditional accuracy score because it deals with ranked data. Given a particular query and a test set, we want to find the most relevant code snippet compared. It is clear why rank is essential in testing because order is essential.
 [[13]](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)
 
 
-### 3c. Metrics for Test Accuracy: nDCG
+### 4c. Metrics for Test Accuracy: nDCG
 * Normalized Discounted Cumulative Gain is used for the W&B rankings because it takes into account different users running different models. I won't discuss the derivation of nDCG too heavily, but it is good at capturing the ranking of relevant documents, as well as varying number of test documents. 
 
 <div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/ndcg_diagram.png" width=65%/></div>
 
  Figure taken from [[13]](https://towardsdatascience.com/evaluate-your-recommendation-engine-using-ndcg-759a851452d1).
 
-## 4. Pre-trained Model Results
+## 5. Pre-trained Model Results
 <div align="center"><img src="https://github.com/jawooson/AI_Project_3/blob/jason-dev/images/test_accuracies_all.png" width=100%/></div>
 
 
