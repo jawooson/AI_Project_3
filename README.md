@@ -227,6 +227,7 @@ Activation function: gelu (Gaussian Error Linear Unit activation function )
 
 
 **Encoder**
+
 The encoder in the proposed Transformer model has multiple “encoder self attention” layers. Each layer is constructed as follows:
 
 1. The input will be the word embeddings for the first layer. For subsequent layers, it will be the output of previous layer.
@@ -318,8 +319,11 @@ Overall Self Attention model has the best MRR score.
 [14] [Natural Language Processing: From Basics to using RNN and LSTM](https://towardsdatascience.com/natural-language-processing-from-basics-to-using-rnn-and-lstm-ef6779e4ae66)  
 [15]  [Bidirectional RNN Online Course Taught by Andrew Ng](https://www.coursera.org/lecture/nlp-sequence-models/bidirectional-rnn-fyXnn)  
 [16] [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](https://arxiv.org/abs/1412.3555)
-
-
+[17] [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)
+[18] [Illustrated: Self-Attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a)
+[19] [Attn: Illustrated Attention](https://towardsdatascience.com/attn-illustrated-attention-5ec4ad276ee3)
+[20] [Illustrated transformer](https://jalammar.github.io/illustrated-transformer/)
+[21] [On the relationship between self-attention and convolutional layers](https://openreview.net/pdf?id=HJlnC1rKPB)
 
  
 
