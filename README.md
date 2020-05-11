@@ -28,10 +28,10 @@ More context regarding the motivation for this problem is in this  [technical re
 	c. Gated Recurrent Unit  
 	d. CodeSearchNet Baseline Model: Bidirectional RNN model (with GRU)  
 	
-3. Self Attention & CNN Self Attention
-	a. Introduction 
-	b. Example 
-	c. Model explain 
+3. Self Attention & CNN Self Attention  
+	a. Introduction  
+	b. Example  
+	c. Model explain  
 	
 4. Testing  
 	a. How does CodeSearchNet Implement Testing?  
