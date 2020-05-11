@@ -2,6 +2,8 @@
 
 This is an extension of the [CodeSearchNet](https://app.wandb.ai/github/codesearchnet/benchmark) competition. 
 
+We ran 3 different models : Neural Bag of Words Model, Bidirectional RNNs model and Self Attention & CNN Self Attention models from the baseline models used in the project and explained them in details. 
+
 ## A brief overview of the project
 [CodeSearchNet](https://arxiv.org/abs/1909.09436)  is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this  [blog post](https://githubengineering.com/towards-natural-language-semantic-code-search/)  and is a joint collaboration between GitHub and the  [Deep Program Understanding](https://www.microsoft.com/en-us/research/project/program/)  group at  [Microsoft Research - Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). We aim to provide a platform for community research on semantic code search via the following:
 
@@ -26,12 +28,19 @@ More context regarding the motivation for this problem is in this  [technical re
 	c. Gated Recurrent Unit  
 	d. CodeSearchNet Baseline Model: Bidirectional RNN model (with GRU)  
 	
-3. Testing  
+3. Self Attention & CNN Self Attention
+	a. Introduction 
+	b. Example 
+	c. Model explain 
+	
+4. Testing  
 	a. How does CodeSearchNet Implement Testing?  
 	b. Metrics for Test Accuracy: MRR  
 	c. Metrics for Test Accuracy: nDCG  
+	
+5. Pre-trained model results  
 
-4. Pre-trained model results
+6. Conclusion
 
 ## 1. Neural Bag of Words Model
 ### 1a. Bag of Words Model
@@ -288,8 +297,6 @@ This metric used for accuracy is much better than traditional accuracy score bec
 | Validation-python MRR   | 0.542 | 0.529 | 0.559 | **0.643**          | 0.583              | 0.588 |
 
 ![img](https://github.com/jawooson/AI_Project_3/blob/lldev/image/comp.png)
-
-## Bibliography
 
 ## 6. Conclusion
 Overall all the models in the baseline perform pretty similarly with MRR score ranging between 0.47-~0.69. Even though there's definitely room for improvement, running a model can take multiple hours even overnight. Self Attention has the overall highest MRR score in all three categories (Test/ FuncNameTest/ Validation). BOW has the lowest MRR score out of three models we discussed across all three categories.
