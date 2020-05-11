@@ -4,6 +4,11 @@ This is an extension of the [CodeSearchNet](https://app.wandb.ai/github/codesear
 
 We ran 3 different models : Neural Bag of Words Model, Bidirectional RNNs model and Self Attention & CNN Self Attention models from the baseline models used in the project and explained them in details. 
 
+Group members: 
+Jason Woo  
+Ruinan Zhang rz1109@nyu.edu  
+Manlan Li ml6589@nyu.edu  
+
 ## A brief overview of the project
 [CodeSearchNet](https://arxiv.org/abs/1909.09436)  is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this  [blog post](https://githubengineering.com/towards-natural-language-semantic-code-search/)  and is a joint collaboration between GitHub and the  [Deep Program Understanding](https://www.microsoft.com/en-us/research/project/program/)  group at  [Microsoft Research - Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). We aim to provide a platform for community research on semantic code search via the following:
 
