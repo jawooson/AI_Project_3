@@ -1,0 +1,19 @@
+root@psdoi03fa:/home/dev/src# ./test.py ../resources/saved_models/convselfatt-2020-05-05-20-58-40_model_best.pkl.gz ../resources/data/python/final/jsonl/valid ../resources/data/python/final/jsonl/test
+2020-05-06 05:21:43.541760: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-06 05:21:43.705291: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-06 05:21:43.705939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Quadro P4000 major: 6 minor: 1 memoryClockRate(GHz): 1.48
+pciBusID: 0000:00:05.0
+totalMemory: 7.93GiB freeMemory: 7.56GiB
+2020-05-06 05:21:43.705975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2020-05-06 05:21:44.351703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-06 05:21:44.351795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2020-05-06 05:21:44.351816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2020-05-06 05:21:44.352005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7293 MB memory) -> physical GPU (device: 0, name: Quadro P4000, pci bus id: 0000:00:05.0, compute capability: 6.1)
+Test-All MRR (bs=1,000):  0.632
+FuncNameTest-All MRR (bs=1,000):  0.595
+Validation-All MRR (bs=1,000):  0.583
+Test-python MRR (bs=1,000):  0.632
+FuncNameTest-python MRR (bs=1,000):  0.595
+Validation-python MRR (bs=1,000):  0.583
+
